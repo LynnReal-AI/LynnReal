@@ -1,0 +1,37 @@
+{
+  "description": "LynnReal-Hand demonstration media and file integrity.",
+  "video": {
+    "resolution": [
+      1920,
+      1080
+    ],
+    "frames": 2479,
+    "fps": 24,
+    "duration_seconds": 103.29166666666667
+  },
+  "teaser": {
+    "resolution": [
+      3200,
+      1800
+    ],
+    "content": "Generated scene frames with decorative background artwork."
+  },
+  "files": {
+    "demo.mp4": {
+      "bytes": 19423765,
+      "sha256": "e99e7a08148a46bd52fe57cf9e57baa6e1d869e0bc20b8458a5a9f486133a454"
+    },
+    "teaser-v2.jpg": {
+      "bytes": 757261,
+      "sha256": "1af817dd5701a68eb279752ef008a8a61535a1fd9077bb3de58862ed2bf6ca94"
+    },
+    "teaser-v2.png": {
+      "bytes": 9469927,
+      "sha256": "78477a9da0172309fb7fcfc6d3758282c13e90723458ea101c79e301bd234634"
+    },
+    "teaser-v2.svg": {
+      "bytes": 3776159,
+      "sha256": "6882a88df8885a5d3f246484cc669ed6d4655a77f99d3650569465cb48c391a0"
+    }
+  }
+}

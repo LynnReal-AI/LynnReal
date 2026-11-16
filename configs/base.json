@@ -1,0 +1,23 @@
+{
+  "stage": "stage1",
+  "model": {
+    "checkpoint_path": "${weights_root}/base",
+    "transformer_subfolder": "transformer",
+    "torch_dtype": "bfloat16",
+    "local_files_only": true,
+    "attention_backend": "_flash_3"
+  },
+  "conditioning": {
+    "checkpoint_path": "${weights_root}/foundation"
+  },
+  "video": {
+    "height": 768,
+    "width": 1344
+  },
+  "sampling": {
+    "schedule_points": 30,
+    "shift": 3.0,
+    "guidance_scale": 3.0,
+    "precompute_adaln": false
+  }
+}

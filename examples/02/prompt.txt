@@ -1,0 +1,4 @@
+For the target video, at 0.00 seconds into the target video, <Picture 1> (from [Shot 1]) is fully referenced.
+integrated_multimodal_description: [Shot 1] <Picture 1> shows an overhead view of a kitchen counter featuring a black stovetop on the left and a wooden cutting board on the right. A patterned bowl filled with yellow corn kernels sits on the board, with a green measuring spoon, an orange knife, and a whole green lime lying nearby. In the background, a paper plate holds a block of butter and shredded cheese, surrounded by spice jars. A left hand holds a blue-handled utensil inside the bowl, while a right hand holds a silver spoon resting in the corn. The right hand lifts the silver spoon, revealing a dollop of white substance on it, and moves it to the right side of the bowl to scrape or deposit the substance onto the corn, while the left hand remains stationary holding the blue utensil.
+overall_soundscape: N/A
+non_diegetic_music: N/A

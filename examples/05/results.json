@@ -1,0 +1,19 @@
+{
+  "id": "example_05",
+  "results": {
+    "base": {
+      "file": "base.mp4",
+      "frames": 243,
+      "width": 1344,
+      "height": 768,
+      "fps": 24.0
+    },
+    "fast": {
+      "file": "fast.mp4",
+      "frames": 243,
+      "width": 1344,
+      "height": 768,
+      "fps": 24.0
+    }
+  }
+}

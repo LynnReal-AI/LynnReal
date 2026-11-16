@@ -1,0 +1,5 @@
+integrated_multimodal_description: [Shot 1] Live-action, cinematic, first-person POV, a close shot frames the viewer's own left hand above a block of modeling clay on a plain table. The left hand kneads the clay, rolls it into a ball, then pinches out a small ear with the fingers. The hand stays clearly visible, with all fingers showing. The camera pushes in with small amplitude at slow speed. Natural window light falls from the left side. The surroundings stay simple and out of focus.
+
+overall_soundscape: Clay squelches and thumps softly under the palms with each press.
+
+non_diegetic_music: Sustained low strings at a slow tempo, quiet and even.

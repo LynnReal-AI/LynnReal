@@ -1,0 +1,102 @@
+{
+  "schema": "lynnreal-hand.weight-layout.v1",
+  "published": true,
+  "components": {
+    "base": {
+      "repo_id": "shaohao011/LynnReal-Hand-Base-1.0",
+      "local_dir": "checkpoints/base",
+      "required": [
+        "model_index.json",
+        "config.json",
+        "transformer/config.json",
+        "transformer/diffusion_pytorch_model.safetensors.index.json",
+        "vae/config.json",
+        "text_encoder/config.json",
+        "tokenizer/tokenizer_config.json",
+        "processor/preprocessor_config.json",
+        "scheduler/scheduler_config.json",
+        "transformer/adaln.safetensors"
+      ],
+      "format": "Sampling-specialized sharded transformer with packaged AdaLN tables",
+      "available": true,
+      "revision": "ce99765b7a332b850c9e94d213997aef0eb618b6",
+      "bundled_conditioning": true,
+      "sampling_specialized": true
+    },
+    "fast": {
+      "repo_id": "shaohao011/LynnReal-Hand-Fast-preview",
+      "local_dir": "checkpoints/fast",
+      "required": [
+        "model_index.json",
+        "config.json",
+        "transformer/config.json",
+        "transformer/diffusion_pytorch_model.safetensors.index.json",
+        "hand_encoder/config.json",
+        "hand_encoder/encoder.safetensors",
+        "vae/config.json",
+        "text_encoder/config.json",
+        "tokenizer/tokenizer_config.json",
+        "processor/preprocessor_config.json",
+        "scheduler/scheduler_config.json",
+        "decoder/config.json",
+        "decoder/weights.safetensors",
+        "decoder/SHA256SUMS.json",
+        "transformer/adaln.safetensors"
+      ],
+      "format": "Sampling-specialized sharded transformer with packaged AdaLN tables",
+      "revision": "5770e69e142ff14219a2bc31de7996f341e7757e",
+      "available": true,
+      "requires_base_at_inference": false,
+      "bundled_conditioning": true,
+      "bundled_decoder": true,
+      "sampling_specialized": true
+    },
+    "vae": {
+      "repo_id": "shaohao011/LynnReal-ultra-fast-vae-1.0",
+      "local_dir": "checkpoints/vae",
+      "required": [
+        "config.json",
+        "weights.safetensors",
+        "SHA256SUMS.json"
+      ],
+      "format": "Decoder, post-projection tensors, and normalization; architecture included in code",
+      "available": true,
+      "revision": "1ceaa7721653ce366f2031c525876a656f7b7fb1",
+      "model_name": "Ultra-Fast-VAE"
+    },
+    "hand_encoder": {
+      "repo_id": "shaohao011/LynnReal-Hand-Fast-preview",
+      "revision": "5770e69e142ff14219a2bc31de7996f341e7757e",
+      "local_dir": "checkpoints/fast",
+      "required": [
+        "hand_encoder/config.json",
+        "hand_encoder/encoder.safetensors"
+      ],
+      "allow_patterns": [
+        "hand_encoder/**"
+      ],
+      "available": true,
+      "format": "Matching compact taeh3 hand encoder; included in the Fast repository"
+    },
+    "foundation": {
+      "repo_id": "MiniMaxAI/MiniMax-H3",
+      "local_dir": "checkpoints/foundation",
+      "required": [
+        "vae/config.json",
+        "text_encoder/config.json",
+        "tokenizer/tokenizer_config.json",
+        "processor/preprocessor_config.json"
+      ],
+      "format": "Original native H3 VAE and Qwen visual/text conditioners; preserve upstream layout and terms",
+      "revision": "0919fb684102ef115126612f3fbb84d1027e7317",
+      "allow_patterns": [
+        "vae/**",
+        "text_encoder/**",
+        "tokenizer/**",
+        "processor/**"
+      ],
+      "available": true
+    }
+  },
+  "private": false
+}
