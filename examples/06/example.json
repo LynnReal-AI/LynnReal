@@ -1,0 +1,13 @@
+{
+  "id": "example_06",
+  "description": "Clay modeling",
+  "frames": 243,
+  "fps": 24.0,
+  "seed": 42,
+  "image": "image.png",
+  "hand_video": "hand.mp4",
+  "camera": "camera.npz",
+  "caption": "integrated_multimodal_description: [Shot 1] Live-action, cinematic, first-person POV, a close shot frames the viewer's own left hand above a block of modeling clay on a plain table. The left hand kneads the clay, rolls it into a ball, then pinches out a small ear with the fingers. The hand stays clearly visible, with all fingers showing. The camera pushes in with small amplitude at slow speed. Natural window light falls from the left side. The surroundings stay simple and out of focus.\n\noverall_soundscape: Clay squelches and thumps softly under the palms with each press.\n\nnon_diegetic_music: Sustained low strings at a slow tempo, quiet and even.",
+  "target_video": "reference.mp4",
+  "camera_convention": "native H3 latent-frame-aligned camera_viewmats and normalized camera_K; no temporal interpolation"
+}

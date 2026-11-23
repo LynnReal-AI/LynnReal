@@ -1,0 +1,28 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "lynnreal-hand"
+version = "0.1.0"
+description = "H3 hand-controlled Base/Fast video inference"
+readme = "README.md"
+requires-python = ">=3.10"
+license = {file = "LICENSE"}
+dependencies = ["torch>=2.9,<2.10", "torchvision>=0.24,<0.25", "numpy>=1.24", "Pillow>=10", "safetensors>=0.5", "transformers==5.14.1", "diffusers==0.40.0", "accelerate>=1.10", "huggingface-hub>=1.23,<2", "einops>=0.8", "PyYAML>=6", "omegaconf>=2.3", "ninja>=1.11"]
+
+[project.optional-dependencies]
+dev = ["pytest>=8", "build>=1"]
+
+[project.scripts]
+lynnreal-hand = "lynnreal_hand.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.package-data]
+lynnreal_hand = ["**/*.json", "**/*.py"]
+
+[tool.setuptools.data-files]
+"share/lynnreal-hand/third_party" = ["third_party/TAEHV_LICENSE", "third_party/README.md", "third_party/H3_OVERLAY_MANIFEST.json", "third_party/source_inventory.json"]
+"share/lynnreal-hand/third_party/acknowledgements" = ["third_party/acknowledgements/backend_LICENSE", "third_party/acknowledgements/backend_NOTICE", "third_party/acknowledgements/deployment_LICENSE", "third_party/acknowledgements/deployment_NOTICE", "third_party/acknowledgements/README.md", "third_party/acknowledgements/license_reference.json", "third_party/acknowledgements/retained_code_APACHE_LICENSE", "third_party/acknowledgements/upstream_inventory.json"]

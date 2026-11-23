@@ -1,0 +1,1256 @@
+{
+  "description": "Original code inventory for retained third-party attribution.",
+  "created_utc": "2026-11-14",
+  "files": {
+    "src/lynnreal_hand/backends/h3/_runtime/student.py": {
+      "sha256": "67a55cd0b4d4d66e5591286db87694b57d2ca2a1c70b57756b6ae2a4d33b4693",
+      "release_sha256": "67a55cd0b4d4d66e5591286db87694b57d2ca2a1c70b57756b6ae2a4d33b4693",
+      "modified_for_release": false
+    },
+    "src/lynnreal_hand/backends/h3/_runtime/support.py": {
+      "sha256": "dc5720a36d58c55108df2cb2a9d37b04ee04260b23fb8377b2164d20d6988f53",
+      "release_sha256": "dc5720a36d58c55108df2cb2a9d37b04ee04260b23fb8377b2164d20d6988f53",
+      "modified_for_release": false
+    },
+    "src/lynnreal_hand/backends/h3/_runtime/native_contract.py": {
+      "sha256": "658c7ceb16517db887851565cde760c3c795caeaca79bf763968664322b59cb1",
+      "release_sha256": "658c7ceb16517db887851565cde760c3c795caeaca79bf763968664322b59cb1",
+      "modified_for_release": false
+    },
+    "src/lynnreal_hand/backends/h3/_runtime/geometry.py": {
+      "sha256": "e64e0273ffeab1638ed74c4e8bfce16fa7e278c9f1296235e2f8ec0795fc13de",
+      "release_sha256": "e64e0273ffeab1638ed74c4e8bfce16fa7e278c9f1296235e2f8ec0795fc13de",
+      "modified_for_release": false
+    },
+    "src/lynnreal_hand/backends/h3/_runtime/real_teacher.py": {
+      "sha256": "659715ab75d7aecdc530d8876a92f35d682425085e9ebce8adb125e1881a6eb7",
+      "release_sha256": "659715ab75d7aecdc530d8876a92f35d682425085e9ebce8adb125e1881a6eb7",
+      "modified_for_release": false
+    },
+    "src/lynnreal_hand/backends/h3/_runtime/aligned_scores.py": {
+      "sha256": "fe9bbe21de9adcf18ef9b297c183fafc121314a5c2a6168bb236b1d22ac8c6a2",
+      "release_sha256": "fe9bbe21de9adcf18ef9b297c183fafc121314a5c2a6168bb236b1d22ac8c6a2",
+      "modified_for_release": false
+    },
+    "src/lynnreal_hand/backends/h3/_runtime/lynn_decoder.py": {
+      "sha256": "02667d918ec345201d97626d08538a9d43d654aa131d27f4ac7bc644ff69757c",
+      "release_sha256": "cfa70ab260b44407e9440927ad44274ebcb7b98b04dab0e6def8452a0be6ce69",
+      "modified_for_release": true
+    },
+    "src/lynnreal_hand/backends/h3/_runtime/official_stage0p5_v34/loader.py": {
+      "sha256": "fa2a6f816f110bbda003cc7ed4ad7739e7e564c0c06120804e9a1506560a8438",
+      "release_sha256": "fa2a6f816f110bbda003cc7ed4ad7739e7e564c0c06120804e9a1506560a8438",
+      "modified_for_release": false
+    },
+    "src/lynnreal_hand/backends/h3/_runtime/official_stage0p5_v34/layout.py": {
+      "sha256": "4674719c38f45daca02a5938f7fe235f0a924ca102dc7f085d8bb90c1310d43d",
+      "release_sha256": "4674719c38f45daca02a5938f7fe235f0a924ca102dc7f085d8bb90c1310d43d",
+      "modified_for_release": false
+    },
+    "src/lynnreal_hand/backends/h3/_runtime/h3_fa3_policy.py": {
+      "sha256": "a31f2579a6fef6a9ee8f6f15a62228f52573b90969118ebce9ac25afc0ffd5b7",
+      "release_sha256": "a31f2579a6fef6a9ee8f6f15a62228f52573b90969118ebce9ac25afc0ffd5b7",
+      "modified_for_release": false
+    },
+    "src/lynnreal_hand/backends/h3/_runtime/fa3_autograd_policy.py": {
+      "sha256": "c45af86c08977344c376831035f8eb9af64bc6d31bd7825921fe743bd620b5a4",
+      "release_sha256": "c45af86c08977344c376831035f8eb9af64bc6d31bd7825921fe743bd620b5a4",
+      "modified_for_release": false
+    },
+    "src/lynnreal_hand/backends/h3/_runtime/stage2_dmd_handwarmup_v2/core.py": {
+      "sha256": "7b5ed6733d5b7ff2414f1afd992f28f3f347a19713eddb43cf6c701fbeaea816",
+      "release_sha256": "7b5ed6733d5b7ff2414f1afd992f28f3f347a19713eddb43cf6c701fbeaea816",
+      "modified_for_release": false
+    },
+    "src/lynnreal_hand/backends/h3/_runtime/h3_exact_kernels_v38/install.py": {
+      "sha256": "99ed2279013bd03bf8739137206d5a075743d2c9fa0ff9a3b997e6bc857c8609",
+      "release_sha256": "99ed2279013bd03bf8739137206d5a075743d2c9fa0ff9a3b997e6bc857c8609",
+      "modified_for_release": false
+    },
+    "src/lynnreal_hand/backends/h3/_runtime/h3_lora_memory_v75.py": {
+      "sha256": "d7d22dc1ae55afe0d25f6620ca9f6c0d96a8f78e37c32bf2bd862f8745403a33",
+      "release_sha256": "d7d22dc1ae55afe0d25f6620ca9f6c0d96a8f78e37c32bf2bd862f8745403a33",
+      "modified_for_release": false
+    },
+    "src/lynnreal_hand/backends/h3/_runtime/stage1_w4_hand_base_v2/ffn_memory.py": {
+      "sha256": "b8a96ba7899be74883ff3644b4de0ef56ebd569edba2e13df97482f84000d5ca",
+      "release_sha256": "b8a96ba7899be74883ff3644b4de0ef56ebd569edba2e13df97482f84000d5ca",
+      "modified_for_release": false
+    },
+    "src/lynnreal_hand/backends/h3/_runtime/stage2_dmd_handwarmup_v2/__init__.py": {
+      "sha256": "d4b2d3072d267eda46ca9e16a027e515746cc56b0d56516fb9fbb57dd9dfb8e1",
+      "release_sha256": "d4b2d3072d267eda46ca9e16a027e515746cc56b0d56516fb9fbb57dd9dfb8e1",
+      "modified_for_release": false
+    },
+    "src/lynnreal_hand/backends/h3/_runtime/official_stage0p5_v34/__init__.py": {
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "release_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "modified_for_release": false
+    },
+    "src/lynnreal_hand/backends/h3/_runtime/hand_nft_v1/objective.py": {
+      "sha256": "d147896c673e09ca8cdece0c9b3721d29070bd8ccafcc227a6cb2368869a10cf",
+      "release_sha256": "d147896c673e09ca8cdece0c9b3721d29070bd8ccafcc227a6cb2368869a10cf",
+      "modified_for_release": false
+    },
+    "src/lynnreal_hand/backends/h3/_runtime/stage2_dmd_handwarmup_v2/native_video.py": {
+      "sha256": "fd21d8b265f8d8a9302c49fa8e653e54c86730552d2fb0e62cf54716954bffe8",
+      "release_sha256": "fd21d8b265f8d8a9302c49fa8e653e54c86730552d2fb0e62cf54716954bffe8",
+      "modified_for_release": false
+    },
+    "src/lynnreal_hand/backends/h3/_runtime/h3_exact_kernels_v38/h3_rope_index_dispatch.py": {
+      "sha256": "70179d62ed7ee5839e122c33a4f7e1f9c9825a56a176f6d671484e0ac16dbb22",
+      "release_sha256": "70179d62ed7ee5839e122c33a4f7e1f9c9825a56a176f6d671484e0ac16dbb22",
+      "modified_for_release": false
+    },
+    "src/lynnreal_hand/backends/h3/_runtime/hand_nft_v1/native/reference_kv.py": {
+      "sha256": "0a699ad73264cf2610a80b1ab531a51ebd6846dd494bbade1d4a706f4dcbb6d4",
+      "release_sha256": "0a699ad73264cf2610a80b1ab531a51ebd6846dd494bbade1d4a706f4dcbb6d4",
+      "modified_for_release": false
+    },
+    "src/lynnreal_hand/backends/h3/_runtime/h3_exact_kernels_v38/h3_pointwise_exact_candidate.py": {
+      "sha256": "b8cf589087508da884388dcdaba9928bd8d346520c6503498c6504934a937780",
+      "release_sha256": "b8cf589087508da884388dcdaba9928bd8d346520c6503498c6504934a937780",
+      "modified_for_release": false
+    },
+    "src/lynnreal_hand/backends/h3/_runtime/h3_exact_kernels_v38/__init__.py": {
+      "sha256": "513ad4c6de127b5137f798653c29bd6648cc2cba9b12f4942e51b2a93ebe5aec",
+      "release_sha256": "513ad4c6de127b5137f798653c29bd6648cc2cba9b12f4942e51b2a93ebe5aec",
+      "modified_for_release": false
+    },
+    "src/lynnreal_hand/backends/h3/_runtime/stage1_w4_hand_base_v2/__init__.py": {
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "release_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "modified_for_release": false
+    },
+    "src/lynnreal_hand/backends/h3/_runtime/hand_nft_v1/__init__.py": {
+      "sha256": "68558d822eeeb8258b2a15c4077496ac9bb90e48c6f5e4df0ef7a77e18945223",
+      "release_sha256": "68558d822eeeb8258b2a15c4077496ac9bb90e48c6f5e4df0ef7a77e18945223",
+      "modified_for_release": false
+    },
+    "src/lynnreal_hand/backends/h3/_runtime/h3_exact_kernels_v38/h3_rope_fused_candidate.py": {
+      "sha256": "c2c28ec1919ac06f90462f0a2e73c9b4af84a5bb45b463e561c89e61e5622dca",
+      "release_sha256": "c2c28ec1919ac06f90462f0a2e73c9b4af84a5bb45b463e561c89e61e5622dca",
+      "modified_for_release": false
+    },
+    "src/lynnreal_hand/backends/h3/_runtime/h3_exact_kernels_v38/h3_rope_wide_candidate.py": {
+      "sha256": "bd4b57e1ddbdca1704543f0b4e6d93a656b6aae1dbd90a4b108ff60a4c4110fe",
+      "release_sha256": "bd4b57e1ddbdca1704543f0b4e6d93a656b6aae1dbd90a4b108ff60a4c4110fe",
+      "modified_for_release": false
+    },
+    "src/lynnreal_hand/backends/h3/_runtime/hand_nft_v1/native/__init__.py": {
+      "sha256": "e24b0a909ba437a2439b25e1fc5a0426f6c94cf0404863e5484313a4a461135c",
+      "release_sha256": "e24b0a909ba437a2439b25e1fc5a0426f6c94cf0404863e5484313a4a461135c",
+      "modified_for_release": false
+    },
+    "src/lynnreal_hand/backends/h3/_runtime/h3_exact_kernels_v38/h3_pointwise_exact_kernel.py": {
+      "sha256": "9f7701a68c0f65f30d8b23391d3b25f5e2887494b66228bc634363ea3df9c7b3",
+      "release_sha256": "9f7701a68c0f65f30d8b23391d3b25f5e2887494b66228bc634363ea3df9c7b3",
+      "modified_for_release": false
+    },
+    "src/lynnreal_hand/backends/h3/_runtime/h3_exact_kernels_v38/h3_rope_fused_kernel.py": {
+      "sha256": "1f918c672726fa6ce552d14b29946dbe59f5fbb9e49453a6d09109c6837f8886",
+      "release_sha256": "1f918c672726fa6ce552d14b29946dbe59f5fbb9e49453a6d09109c6837f8886",
+      "modified_for_release": false
+    },
+    "src/lynnreal_hand/backends/h3/_runtime/h3_exact_kernels_v38/h3_rope_wide_kernel.py": {
+      "sha256": "55dd77f3d9534c8e300f09aee487249744c58279154d570e4124d05bbd9c2b0e",
+      "release_sha256": "55dd77f3d9534c8e300f09aee487249744c58279154d570e4124d05bbd9c2b0e",
+      "modified_for_release": false
+    },
+    "src/solarwm/errors.py": {
+      "sha256": "2b0cc2f2a805ffab04424f6a23e1c45bcfc5f68ed1e1073324fbad5c9505c99c",
+      "release_sha256": "2b0cc2f2a805ffab04424f6a23e1c45bcfc5f68ed1e1073324fbad5c9505c99c",
+      "modified_for_release": false
+    },
+    "src/solarwm/cli.py": {
+      "sha256": "e59a3bd6b781c00b90161c7c2cd4005559754c44e8bce685e803f4ceff75a6ec",
+      "release_sha256": "e59a3bd6b781c00b90161c7c2cd4005559754c44e8bce685e803f4ceff75a6ec",
+      "modified_for_release": false
+    },
+    "src/solarwm/__init__.py": {
+      "sha256": "726dca7cf7469c087cc3a84827539e02b7cb4063859690ef09e0c4dbcb3ac6ca",
+      "release_sha256": "726dca7cf7469c087cc3a84827539e02b7cb4063859690ef09e0c4dbcb3ac6ca",
+      "modified_for_release": false
+    },
+    "src/solarwm/version.py": {
+      "sha256": "f94613a4af2546ecdcc3d0445a47411f22624bfbe3be0d0fd3a5a8db1b3efaeb",
+      "release_sha256": "f94613a4af2546ecdcc3d0445a47411f22624bfbe3be0d0fd3a5a8db1b3efaeb",
+      "modified_for_release": false
+    },
+    "src/solarwm/__main__.py": {
+      "sha256": "935a1c1166b0c1ea35a82256345000bf2c73ded718d77773bc27a71ecce28f7d",
+      "release_sha256": "935a1c1166b0c1ea35a82256345000bf2c73ded718d77773bc27a71ecce28f7d",
+      "modified_for_release": false
+    },
+    "src/solarwm/preencode/__init__.py": {
+      "sha256": "18ecc90aeb940ce1b53fecf18cf6f3e6cc5ebc4cfa63b7e786657d41ec21e34a",
+      "release_sha256": "18ecc90aeb940ce1b53fecf18cf6f3e6cc5ebc4cfa63b7e786657d41ec21e34a",
+      "modified_for_release": false
+    },
+    "src/solarwm/preencode/shards.py": {
+      "sha256": "7db9986527bf1c4e23c7914a9da8a294100e62d64d0d66dc25aefc2f696114c4",
+      "release_sha256": "7db9986527bf1c4e23c7914a9da8a294100e62d64d0d66dc25aefc2f696114c4",
+      "modified_for_release": false
+    },
+    "src/solarwm/preencode/contracts.py": {
+      "sha256": "65293403b03efc62e924ad7515700c5c60a7f5dd1d68d07cd8b7a0ce07dcac83",
+      "release_sha256": "65293403b03efc62e924ad7515700c5c60a7f5dd1d68d07cd8b7a0ce07dcac83",
+      "modified_for_release": false
+    },
+    "src/solarwm/inference/engine.py": {
+      "sha256": "8b01135fb64b2f3d8f9a44c0f97b91385a7c1329fd77b04b21ccb0973728c931",
+      "release_sha256": "8b01135fb64b2f3d8f9a44c0f97b91385a7c1329fd77b04b21ccb0973728c931",
+      "modified_for_release": false
+    },
+    "src/solarwm/inference/__init__.py": {
+      "sha256": "696d6cdc013c3d41d141886442b7d74dbeced9131daa7da024506b449a6ebf55",
+      "release_sha256": "696d6cdc013c3d41d141886442b7d74dbeced9131daa7da024506b449a6ebf55",
+      "modified_for_release": false
+    },
+    "src/solarwm/inference/comparison.py": {
+      "sha256": "d8bb7b1aa17667516fac0674e2635d7ed1a6b7db3796a01b770115f79d963dbb",
+      "release_sha256": "d8bb7b1aa17667516fac0674e2635d7ed1a6b7db3796a01b770115f79d963dbb",
+      "modified_for_release": false
+    },
+    "src/solarwm/inference/validation_plan.py": {
+      "sha256": "64a29b7042ebaf6baf2ba282d5c1a2ffdd18ca3cdaf6ab26fab36472e5f06d7d",
+      "release_sha256": "64a29b7042ebaf6baf2ba282d5c1a2ffdd18ca3cdaf6ab26fab36472e5f06d7d",
+      "modified_for_release": false
+    },
+    "src/solarwm/runtime/serialization.py": {
+      "sha256": "a6c4d2f3bb08268e11a2e07da1646ed4d606ebb91838c23938d61dfd3ab95f0d",
+      "release_sha256": "a6c4d2f3bb08268e11a2e07da1646ed4d606ebb91838c23938d61dfd3ab95f0d",
+      "modified_for_release": false
+    },
+    "src/solarwm/runtime/images.py": {
+      "sha256": "446bd1483b14e413bc42f6e500bb6241b79b5a36b9df10289b0b05558e02ca73",
+      "release_sha256": "446bd1483b14e413bc42f6e500bb6241b79b5a36b9df10289b0b05558e02ca73",
+      "modified_for_release": false
+    },
+    "src/solarwm/runtime/randomness.py": {
+      "sha256": "8191bfe5032dbf945d416dcb0fa9023448a8029df84cd985ff0db7dc9c24ec08",
+      "release_sha256": "8191bfe5032dbf945d416dcb0fa9023448a8029df84cd985ff0db7dc9c24ec08",
+      "modified_for_release": false
+    },
+    "src/solarwm/runtime/create_only.py": {
+      "sha256": "f37f67e67b26138a8f66ff57cddd0ec91dfc60bd48f06e0e3ead0af2fe5bd4b4",
+      "release_sha256": "f37f67e67b26138a8f66ff57cddd0ec91dfc60bd48f06e0e3ead0af2fe5bd4b4",
+      "modified_for_release": false
+    },
+    "src/solarwm/runtime/__init__.py": {
+      "sha256": "3cd0a7f14beed76e095b9842985e3812ddd4f685dd7c8883976e6392508397cd",
+      "release_sha256": "3cd0a7f14beed76e095b9842985e3812ddd4f685dd7c8883976e6392508397cd",
+      "modified_for_release": false
+    },
+    "src/solarwm/runtime/provenance.py": {
+      "sha256": "d2ad8153959e2d68c2a1a0cb17c7370629fca0398bd1abf47ec9c4a113855d6d",
+      "release_sha256": "d2ad8153959e2d68c2a1a0cb17c7370629fca0398bd1abf47ec9c4a113855d6d",
+      "modified_for_release": false
+    },
+    "src/solarwm/runtime/output_layout.py": {
+      "sha256": "223aee82b3cd7c0a7a7621ba36697614430bc348c650d9b97d95940c5ff7486c",
+      "release_sha256": "223aee82b3cd7c0a7a7621ba36697614430bc348c650d9b97d95940c5ff7486c",
+      "modified_for_release": false
+    },
+    "src/solarwm/runtime/safe_state.py": {
+      "sha256": "baae8b3efee470e1b7b655c3dcd2daf805bdd0dab1bcaf68462b8ceaac718c8b",
+      "release_sha256": "baae8b3efee470e1b7b655c3dcd2daf805bdd0dab1bcaf68462b8ceaac718c8b",
+      "modified_for_release": false
+    },
+    "src/solarwm/runtime/topology.py": {
+      "sha256": "17e2d929272550f9eeee28194c7f716b46691bfdc46f2a8f63819782b52f20e2",
+      "release_sha256": "17e2d929272550f9eeee28194c7f716b46691bfdc46f2a8f63819782b52f20e2",
+      "modified_for_release": false
+    },
+    "src/solarwm/runtime/distributed.py": {
+      "sha256": "4538b63e7bc39648888ad1d32aa18bc4852d06404849b973511156eb1d7ace89",
+      "release_sha256": "4538b63e7bc39648888ad1d32aa18bc4852d06404849b973511156eb1d7ace89",
+      "modified_for_release": false
+    },
+    "src/solarwm/checkpoint/__init__.py": {
+      "sha256": "3f862f280a1dd29e3726268f84d43853bc14524b1af266c081d401f25a101ea6",
+      "release_sha256": "3f862f280a1dd29e3726268f84d43853bc14524b1af266c081d401f25a101ea6",
+      "modified_for_release": false
+    },
+    "src/solarwm/checkpoint/store.py": {
+      "sha256": "7710248389a2480dade90a3e129222f97d14240f0b5ee53dcb2a8f379251e750",
+      "release_sha256": "7710248389a2480dade90a3e129222f97d14240f0b5ee53dcb2a8f379251e750",
+      "modified_for_release": false
+    },
+    "src/solarwm/backends/__init__.py": {
+      "sha256": "4b1cc0fb39af636e804fae3a8fd5c9a0f6b0cf005ada967625707859a515e222",
+      "release_sha256": "4b1cc0fb39af636e804fae3a8fd5c9a0f6b0cf005ada967625707859a515e222",
+      "modified_for_release": false
+    },
+    "src/solarwm/backends/registry.py": {
+      "sha256": "518228cab8cd9260f8dea3400d0adc83e2b37cb77d80ad683d2d3daa7591e110",
+      "release_sha256": "518228cab8cd9260f8dea3400d0adc83e2b37cb77d80ad683d2d3daa7591e110",
+      "modified_for_release": false
+    },
+    "src/solarwm/backends/minimax_h3/runtime.py": {
+      "sha256": "c65e80ec4193f63d34d39d70c1a2545d1dcc91fcf7b2a8361cc6f6ac374d6d2a",
+      "release_sha256": "c65e80ec4193f63d34d39d70c1a2545d1dcc91fcf7b2a8361cc6f6ac374d6d2a",
+      "modified_for_release": false
+    },
+    "src/solarwm/backends/minimax_h3/anyflow_loss.py": {
+      "sha256": "c5831185ea690793078534a9357be92bd8fc0f5f38fbca22993f0a622a783952",
+      "release_sha256": "c5831185ea690793078534a9357be92bd8fc0f5f38fbca22993f0a622a783952",
+      "modified_for_release": false
+    },
+    "src/solarwm/backends/minimax_h3/optional.py": {
+      "sha256": "b282ffb4b73a0014554c8143a12cb595b523490eeeae7c1bad0c8b48a704c94f",
+      "release_sha256": "b282ffb4b73a0014554c8143a12cb595b523490eeeae7c1bad0c8b48a704c94f",
+      "modified_for_release": false
+    },
+    "src/solarwm/backends/minimax_h3/torch_geometry.py": {
+      "sha256": "e3756de06f89379392d9d48a4d234d62a452c4372a20d8c1b110b85cfbf97f70",
+      "release_sha256": "e3756de06f89379392d9d48a4d234d62a452c4372a20d8c1b110b85cfbf97f70",
+      "modified_for_release": false
+    },
+    "src/solarwm/backends/minimax_h3/model.py": {
+      "sha256": "0e96e3001af7f8f085ef60ecae601ca426d7fc3e8d18be48add46d3a56a77984",
+      "release_sha256": "0e96e3001af7f8f085ef60ecae601ca426d7fc3e8d18be48add46d3a56a77984",
+      "modified_for_release": false
+    },
+    "src/solarwm/backends/minimax_h3/lora.py": {
+      "sha256": "63eef022a1d45d4ae4e29479b38df1afb9528b8a1e986118a05a71e5542ced12",
+      "release_sha256": "63eef022a1d45d4ae4e29479b38df1afb9528b8a1e986118a05a71e5542ced12",
+      "modified_for_release": false
+    },
+    "src/solarwm/backends/minimax_h3/stage0p5.py": {
+      "sha256": "7af3764f960090f90d9c9f3f829fc6ea82a2fd1305e375f791bddef1fdb76d3a",
+      "release_sha256": "7af3764f960090f90d9c9f3f829fc6ea82a2fd1305e375f791bddef1fdb76d3a",
+      "modified_for_release": false
+    },
+    "src/solarwm/backends/minimax_h3/raw_data.py": {
+      "sha256": "495eefb39ab1ef35924c15290f16701bbe432fc1c560ab0ec56301dc5d10d6bd",
+      "release_sha256": "495eefb39ab1ef35924c15290f16701bbe432fc1c560ab0ec56301dc5d10d6bd",
+      "modified_for_release": false
+    },
+    "src/solarwm/backends/minimax_h3/stream_decode.py": {
+      "sha256": "3eabb2cb390214609da12aff420e6f46f226e2fc368a985024969a221083eaac",
+      "release_sha256": "3eabb2cb390214609da12aff420e6f46f226e2fc368a985024969a221083eaac",
+      "modified_for_release": false
+    },
+    "src/solarwm/backends/minimax_h3/validation_inputs.py": {
+      "sha256": "25c6f945ab6f8b14e8d44c19f7da9935455515145cd84f25c0c19ab47a92d175",
+      "release_sha256": "25c6f945ab6f8b14e8d44c19f7da9935455515145cd84f25c0c19ab47a92d175",
+      "modified_for_release": false
+    },
+    "src/solarwm/backends/minimax_h3/stage2_runtime.py": {
+      "sha256": "75e4aa741239f3643cfba48cedfb2709ba4dbf84c2bd45b85a64dc10e5d57880",
+      "release_sha256": "75e4aa741239f3643cfba48cedfb2709ba4dbf84c2bd45b85a64dc10e5d57880",
+      "modified_for_release": false
+    },
+    "src/solarwm/backends/minimax_h3/mask.py": {
+      "sha256": "b73defdf2b6e1ab507ffe47c8607675f67393889f4bb7a2da08fc3968fa095a7",
+      "release_sha256": "b73defdf2b6e1ab507ffe47c8607675f67393889f4bb7a2da08fc3968fa095a7",
+      "modified_for_release": false
+    },
+    "src/solarwm/backends/minimax_h3/__init__.py": {
+      "sha256": "4cc00f2968da8b13e519e553d43003dc7700a73f80c621155114da84b876366a",
+      "release_sha256": "4cc00f2968da8b13e519e553d43003dc7700a73f80c621155114da84b876366a",
+      "modified_for_release": false
+    },
+    "src/solarwm/backends/minimax_h3/stage1.py": {
+      "sha256": "a7f47b95402b15b24d0f0dd2071b16a6f0f9a8825cb0c316796112062564e3b1",
+      "release_sha256": "a7f47b95402b15b24d0f0dd2071b16a6f0f9a8825cb0c316796112062564e3b1",
+      "modified_for_release": false
+    },
+    "src/solarwm/backends/minimax_h3/optimizer.py": {
+      "sha256": "906f52d591ae7638ff1eb382c9bf6c70d83f42efe1b559821a401926acb3691e",
+      "release_sha256": "7a747e84348a5c6b879f775bf66ba43f6504ff013f8f92ebdbb6d57dedc14632",
+      "modified_for_release": true
+    },
+    "src/solarwm/backends/minimax_h3/stage1_sampling.py": {
+      "sha256": "7875ccfea00677aeb099d31961a2a279b3df62a5c696acbc18758637ebe80ed4",
+      "release_sha256": "7875ccfea00677aeb099d31961a2a279b3df62a5c696acbc18758637ebe80ed4",
+      "modified_for_release": false
+    },
+    "src/solarwm/backends/minimax_h3/torch_prope.py": {
+      "sha256": "7df70405e1223c362da82e50bf2fb80ca65f8c88f0ef1ffb1c7ac0e8b282bdfc",
+      "release_sha256": "7df70405e1223c362da82e50bf2fb80ca65f8c88f0ef1ffb1c7ac0e8b282bdfc",
+      "modified_for_release": false
+    },
+    "src/solarwm/backends/minimax_h3/layout.py": {
+      "sha256": "64edb57b50bf9bf15e9919768d775cbfdd03394fe25b66c929c8941787d9049b",
+      "release_sha256": "64edb57b50bf9bf15e9919768d775cbfdd03394fe25b66c929c8941787d9049b",
+      "modified_for_release": false
+    },
+    "src/solarwm/backends/minimax_h3/inference.py": {
+      "sha256": "9992eff253ed428c5543b771911b456f3bd6bafe4080b59a73bb944be5a345d0",
+      "release_sha256": "9992eff253ed428c5543b771911b456f3bd6bafe4080b59a73bb944be5a345d0",
+      "modified_for_release": false
+    },
+    "src/solarwm/backends/minimax_h3/preencode_runner.py": {
+      "sha256": "288dc5766e11b40d3b3caedabfbb1c5cd1e5ac2c8c3e5c5f67fdc4fafb219dc9",
+      "release_sha256": "288dc5766e11b40d3b3caedabfbb1c5cd1e5ac2c8c3e5c5f67fdc4fafb219dc9",
+      "modified_for_release": false
+    },
+    "src/solarwm/backends/minimax_h3/sgf_rollout.py": {
+      "sha256": "93b3405d1faa82ae47901400e26aad7e96f4c02854ddc2a2b979388be13be0db",
+      "release_sha256": "93b3405d1faa82ae47901400e26aad7e96f4c02854ddc2a2b979388be13be0db",
+      "modified_for_release": false
+    },
+    "src/solarwm/backends/minimax_h3/geometry.py": {
+      "sha256": "3d17d2077e44a5ceaddeafb5a86b5027ca65330d45c627fbc4460fc80b353fa4",
+      "release_sha256": "3d17d2077e44a5ceaddeafb5a86b5027ca65330d45c627fbc4460fc80b353fa4",
+      "modified_for_release": false
+    },
+    "src/solarwm/backends/minimax_h3/demo_conditions.py": {
+      "sha256": "40743c5f6dd1eefaba2d26cf31169d8a74dc1f2155b44d5b3bc960cabfa02206",
+      "release_sha256": "40743c5f6dd1eefaba2d26cf31169d8a74dc1f2155b44d5b3bc960cabfa02206",
+      "modified_for_release": false
+    },
+    "src/solarwm/backends/minimax_h3/backend.py": {
+      "sha256": "47092e325da53a4abfd07b502669021f43f475c5ab42edd46ca3717046a2e34b",
+      "release_sha256": "47092e325da53a4abfd07b502669021f43f475c5ab42edd46ca3717046a2e34b",
+      "modified_for_release": false
+    },
+    "src/solarwm/backends/minimax_h3/anyflow_conditioning.py": {
+      "sha256": "7c85d26c0e2e22606162256288730dbc126fb2464802e400eb27c98f14c9c64d",
+      "release_sha256": "7c85d26c0e2e22606162256288730dbc126fb2464802e400eb27c98f14c9c64d",
+      "modified_for_release": false
+    },
+    "src/solarwm/backends/minimax_h3/sgf.py": {
+      "sha256": "0384018bc2cc1ea50b74e64080756c2d73bb37b3adfe469e753bd775ce104c04",
+      "release_sha256": "0384018bc2cc1ea50b74e64080756c2d73bb37b3adfe469e753bd775ce104c04",
+      "modified_for_release": false
+    },
+    "src/solarwm/backends/minimax_h3/camera.py": {
+      "sha256": "8247c1443fc033d1b5d5bf428f29827618b2fdeec516e2cd64079fa1b00bb113",
+      "release_sha256": "8247c1443fc033d1b5d5bf428f29827618b2fdeec516e2cd64079fa1b00bb113",
+      "modified_for_release": false
+    },
+    "src/solarwm/backends/minimax_h3/official_codec.py": {
+      "sha256": "38da2c4295c9d28ef6dc8529a082a1d8c37410dc16eb1450aa8288c5310321de",
+      "release_sha256": "38da2c4295c9d28ef6dc8529a082a1d8c37410dc16eb1450aa8288c5310321de",
+      "modified_for_release": false
+    },
+    "src/solarwm/backends/minimax_h3/artifacts.py": {
+      "sha256": "ee7c01bcc1e05b09614b045d1573d6133f20251b75f34ed73d128e28acd15ec0",
+      "release_sha256": "ee7c01bcc1e05b09614b045d1573d6133f20251b75f34ed73d128e28acd15ec0",
+      "modified_for_release": false
+    },
+    "src/solarwm/backends/minimax_h3/fsdp.py": {
+      "sha256": "2b649e930ab0c4eb4fb3f0ca666d2f884b2fc4d2ae52c7bcf053a9426061f042",
+      "release_sha256": "2b649e930ab0c4eb4fb3f0ca666d2f884b2fc4d2ae52c7bcf053a9426061f042",
+      "modified_for_release": false
+    },
+    "src/solarwm/backends/minimax_h3/config.py": {
+      "sha256": "619e3c02b2fabd39072708977d29a2aac27f4731b5f475eff9153e8d91a78c6b",
+      "release_sha256": "619e3c02b2fabd39072708977d29a2aac27f4731b5f475eff9153e8d91a78c6b",
+      "modified_for_release": false
+    },
+    "src/solarwm/backends/minimax_h3/source_length_cache.py": {
+      "sha256": "304143bbe11049bac7478c8a84beb54500ed1ecfc1baf84bfbeac41abdd5bd04",
+      "release_sha256": "304143bbe11049bac7478c8a84beb54500ed1ecfc1baf84bfbeac41abdd5bd04",
+      "modified_for_release": false
+    },
+    "src/solarwm/backends/minimax_h3/weights.py": {
+      "sha256": "d885c4dd7d4bd06ec4ca207c3136831772afb4a72e53d85403e695ecf72a7aef",
+      "release_sha256": "d885c4dd7d4bd06ec4ca207c3136831772afb4a72e53d85403e695ecf72a7aef",
+      "modified_for_release": false
+    },
+    "src/solarwm/backends/minimax_h3/distributed.py": {
+      "sha256": "e0e5d11e269e42b71d4422a1c9f5bc14c26cca931736d3c4088e7b5fee3730eb",
+      "release_sha256": "e0e5d11e269e42b71d4422a1c9f5bc14c26cca931736d3c4088e7b5fee3730eb",
+      "modified_for_release": false
+    },
+    "src/solarwm/backends/minimax_h3/full_length.py": {
+      "sha256": "cc9dc25206fd23aa0be104469f7551ed04b7bf9450f19a3f58bec09a91feb76a",
+      "release_sha256": "cc9dc25206fd23aa0be104469f7551ed04b7bf9450f19a3f58bec09a91feb76a",
+      "modified_for_release": false
+    },
+    "src/solarwm/backends/minimax_h3/torch_mask.py": {
+      "sha256": "fefc9d5f06e7802f1c15e4cc25c9fa555731aede68ac887c42faab0fed018b32",
+      "release_sha256": "fefc9d5f06e7802f1c15e4cc25c9fa555731aede68ac887c42faab0fed018b32",
+      "modified_for_release": false
+    },
+    "src/solarwm/backends/minimax_h3/validation_stream.py": {
+      "sha256": "2d1405c45d509299c6cdd28f31c5ee4adec57591cfe0f012fb25efde42c4385a",
+      "release_sha256": "2d1405c45d509299c6cdd28f31c5ee4adec57591cfe0f012fb25efde42c4385a",
+      "modified_for_release": false
+    },
+    "src/solarwm/backends/minimax_h3/sgf_attention.py": {
+      "sha256": "3eacc2effd9cf2621337775d90735585633b11d09c2f9aa3d7c7e24a7f94f6d2",
+      "release_sha256": "3eacc2effd9cf2621337775d90735585633b11d09c2f9aa3d7c7e24a7f94f6d2",
+      "modified_for_release": false
+    },
+    "src/solarwm/backends/minimax_h3/full_inference.py": {
+      "sha256": "7f11871b6f78253f19456d056a0156aac634221d1e9549b925e2a0ecb4a3aa23",
+      "release_sha256": "7f11871b6f78253f19456d056a0156aac634221d1e9549b925e2a0ecb4a3aa23",
+      "modified_for_release": false
+    },
+    "src/solarwm/backends/minimax_h3/stage2.py": {
+      "sha256": "9318dd5d49d0651d32a6d1f822eed9f2d741dcdf3b3cfeb2f43e08042cadf74e",
+      "release_sha256": "9318dd5d49d0651d32a6d1f822eed9f2d741dcdf3b3cfeb2f43e08042cadf74e",
+      "modified_for_release": false
+    },
+    "src/solarwm/backends/minimax_h3/torch_flow.py": {
+      "sha256": "ffce163c7bdabe1b2c05f6c386b0cabd80e11d02f7e068edfcc864ed4a24c2af",
+      "release_sha256": "ffce163c7bdabe1b2c05f6c386b0cabd80e11d02f7e068edfcc864ed4a24c2af",
+      "modified_for_release": false
+    },
+    "src/solarwm/backends/minimax_h3/diffusers_compat.py": {
+      "sha256": "cfb59b95965e110efdf0956431c63cde3147f2ccb4324d8489cd49ee08e80707",
+      "release_sha256": "cfb59b95965e110efdf0956431c63cde3147f2ccb4324d8489cd49ee08e80707",
+      "modified_for_release": false
+    },
+    "src/solarwm/backends/minimax_h3/codec.py": {
+      "sha256": "87f2073cbb3bb6e1992d39bcdc1a21c5ac0ee91150ca5262bdeac5d7592098b5",
+      "release_sha256": "87f2073cbb3bb6e1992d39bcdc1a21c5ac0ee91150ca5262bdeac5d7592098b5",
+      "modified_for_release": false
+    },
+    "src/solarwm/backends/minimax_h3/ema.py": {
+      "sha256": "28ff07c33eea720c4f800513fb30f06de1e08a55dbae8121a6308805b13936dd",
+      "release_sha256": "28ff07c33eea720c4f800513fb30f06de1e08a55dbae8121a6308805b13936dd",
+      "modified_for_release": false
+    },
+    "src/solarwm/backends/minimax_h3/flow.py": {
+      "sha256": "f50c6e05e7dd23d9cc5905c47a96f1e2d874b95b202a98b284fe6244c3cf0032",
+      "release_sha256": "f50c6e05e7dd23d9cc5905c47a96f1e2d874b95b202a98b284fe6244c3cf0032",
+      "modified_for_release": false
+    },
+    "src/solarwm/backends/minimax_h3/torch_layout.py": {
+      "sha256": "6f5e196caa16c0be85db2153f7d4a86d64c6e8e1b09d2b728714a28e7bc7e030",
+      "release_sha256": "6f5e196caa16c0be85db2153f7d4a86d64c6e8e1b09d2b728714a28e7bc7e030",
+      "modified_for_release": false
+    },
+    "src/solarwm/backends/wan22/windows.py": {
+      "sha256": "e652ee7d83c8a10f43ab8c2110ffe539eac70860c1b0d4ecc7ff4b763ee00fd9",
+      "release_sha256": "e652ee7d83c8a10f43ab8c2110ffe539eac70860c1b0d4ecc7ff4b763ee00fd9",
+      "modified_for_release": false
+    },
+    "src/solarwm/backends/wan22/objectives.py": {
+      "sha256": "df2d72ff311ad5b9dca8dd841df3ec10fa3d81f844c0eee127a52553bfd62d41",
+      "release_sha256": "df2d72ff311ad5b9dca8dd841df3ec10fa3d81f844c0eee127a52553bfd62d41",
+      "modified_for_release": false
+    },
+    "src/solarwm/backends/wan22/anyflow.py": {
+      "sha256": "add9a0601912f5d7aa831edf4d948c6f74d55a83bb04694b37b50292311cff3f",
+      "release_sha256": "add9a0601912f5d7aa831edf4d948c6f74d55a83bb04694b37b50292311cff3f",
+      "modified_for_release": false
+    },
+    "src/solarwm/backends/wan22/__init__.py": {
+      "sha256": "72ab2359b454b391d81bf11319c7bbc056ed2987e0d6b7745163330c6ad3ccb9",
+      "release_sha256": "72ab2359b454b391d81bf11319c7bbc056ed2987e0d6b7745163330c6ad3ccb9",
+      "modified_for_release": false
+    },
+    "src/solarwm/backends/wan22/backend.py": {
+      "sha256": "801775acaaaa132170f7fccb1fae96a0eab1ab1a178f214db9ed70ccef9765f4",
+      "release_sha256": "801775acaaaa132170f7fccb1fae96a0eab1ab1a178f214db9ed70ccef9765f4",
+      "modified_for_release": false
+    },
+    "src/solarwm/backends/wan22/sgf.py": {
+      "sha256": "7fb63828f5140421d4f3961ead1d41a14f6d18aa80ee971f9535dd3e8b02b700",
+      "release_sha256": "7fb63828f5140421d4f3961ead1d41a14f6d18aa80ee971f9535dd3e8b02b700",
+      "modified_for_release": false
+    },
+    "src/solarwm/backends/wan22/generation.py": {
+      "sha256": "7e34302883031fb5e14c70721726c11a7994c19976338f49cf8be85c55343306",
+      "release_sha256": "7e34302883031fb5e14c70721726c11a7994c19976338f49cf8be85c55343306",
+      "modified_for_release": false
+    },
+    "src/solarwm/backends/wan22/contracts.py": {
+      "sha256": "dd875c4c6ec82c309d605953e1741e92cb798265e7d8c6920b827043c8070b62",
+      "release_sha256": "dd875c4c6ec82c309d605953e1741e92cb798265e7d8c6920b827043c8070b62",
+      "modified_for_release": false
+    },
+    "src/solarwm/backends/wan22/codec.py": {
+      "sha256": "2e96781645de227b29de9377938e8c6d4b1d8410d3c9a7a927e9678119c0496f",
+      "release_sha256": "2e96781645de227b29de9377938e8c6d4b1d8410d3c9a7a927e9678119c0496f",
+      "modified_for_release": false
+    },
+    "src/solarwm/backends/wan22/runtime/preencode.py": {
+      "sha256": "5fe034c3ec1e32ebd3c20cd85e6e46f0059c853cf5a488c190bd221f27265de5",
+      "release_sha256": "5fe034c3ec1e32ebd3c20cd85e6e46f0059c853cf5a488c190bd221f27265de5",
+      "modified_for_release": false
+    },
+    "src/solarwm/backends/wan22/runtime/scheduler.py": {
+      "sha256": "823aa8724c5f299db10bc3d43aaf4603008bb8e2407aaf2cd58d5ea111f72a24",
+      "release_sha256": "823aa8724c5f299db10bc3d43aaf4603008bb8e2407aaf2cd58d5ea111f72a24",
+      "modified_for_release": false
+    },
+    "src/solarwm/backends/wan22/runtime/stage0p5.py": {
+      "sha256": "68f1e57120997f2f5b815b3ea966839f82737a3d4ae4254642db852a846ed048",
+      "release_sha256": "68f1e57120997f2f5b815b3ea966839f82737a3d4ae4254642db852a846ed048",
+      "modified_for_release": false
+    },
+    "src/solarwm/backends/wan22/runtime/loader.py": {
+      "sha256": "5ccbb9f5f2bcae85269c6b568e33502d09a88c792185a666b9feeccdad9ac684",
+      "release_sha256": "5ccbb9f5f2bcae85269c6b568e33502d09a88c792185a666b9feeccdad9ac684",
+      "modified_for_release": false
+    },
+    "src/solarwm/backends/wan22/runtime/data.py": {
+      "sha256": "1c27b6475d7d52ab7b02ad89fe7db3aa427aad5eebebdbf8e60e3e8e6b77ab3c",
+      "release_sha256": "1c27b6475d7d52ab7b02ad89fe7db3aa427aad5eebebdbf8e60e3e8e6b77ab3c",
+      "modified_for_release": false
+    },
+    "src/solarwm/backends/wan22/runtime/__init__.py": {
+      "sha256": "72598b164b6c2af7445d18dd716b828ca6c7155f94eb4b81d8dfaf4fec64ed24",
+      "release_sha256": "72598b164b6c2af7445d18dd716b828ca6c7155f94eb4b81d8dfaf4fec64ed24",
+      "modified_for_release": false
+    },
+    "src/solarwm/backends/wan22/runtime/stage1.py": {
+      "sha256": "485292a2f2946760ef7d6fc2139c41b56b205975c4f2cb54521c18a814717310",
+      "release_sha256": "485292a2f2946760ef7d6fc2139c41b56b205975c4f2cb54521c18a814717310",
+      "modified_for_release": false
+    },
+    "src/solarwm/backends/wan22/runtime/checkpoint.py": {
+      "sha256": "8759e0fe866b87df214dededa32879a7db5ce9f6933554ed871c5fff0aff36c1",
+      "release_sha256": "8759e0fe866b87df214dededa32879a7db5ce9f6933554ed871c5fff0aff36c1",
+      "modified_for_release": false
+    },
+    "src/solarwm/backends/wan22/runtime/assets.py": {
+      "sha256": "81a7afb46eb67d3e61f5b0720677fa4367ce57ce0b8a195e2ab56af1329ecaa8",
+      "release_sha256": "81a7afb46eb67d3e61f5b0720677fa4367ce57ce0b8a195e2ab56af1329ecaa8",
+      "modified_for_release": false
+    },
+    "src/solarwm/backends/wan22/runtime/inference.py": {
+      "sha256": "38291d4f534f2aa4d39b9bfff36826aa463533553583ce185f072aa21277736e",
+      "release_sha256": "38291d4f534f2aa4d39b9bfff36826aa463533553583ce185f072aa21277736e",
+      "modified_for_release": false
+    },
+    "src/solarwm/backends/wan22/runtime/publication.py": {
+      "sha256": "499ce597819ffedb22ebe0c90380ab374e989094d28a43a6c30993be256d02c7",
+      "release_sha256": "499ce597819ffedb22ebe0c90380ab374e989094d28a43a6c30993be256d02c7",
+      "modified_for_release": false
+    },
+    "src/solarwm/backends/wan22/runtime/components.py": {
+      "sha256": "7d86d9af3881cffc72c8266cb2e6fce1eb412c60fb1020dd2ad4b46504b55637",
+      "release_sha256": "7d86d9af3881cffc72c8266cb2e6fce1eb412c60fb1020dd2ad4b46504b55637",
+      "modified_for_release": false
+    },
+    "src/solarwm/backends/wan22/runtime/sequence_parallel.py": {
+      "sha256": "6f8c34e16a121c4bccc31f56ddf7b7eb815ebaba6813c677e643699f3595cb4f",
+      "release_sha256": "6f8c34e16a121c4bccc31f56ddf7b7eb815ebaba6813c677e643699f3595cb4f",
+      "modified_for_release": false
+    },
+    "src/solarwm/backends/wan22/runtime/preencoded.py": {
+      "sha256": "342b8c64996f1fde5990fd1948d1caf22cd5426b060a06366bb053031e92fa2c",
+      "release_sha256": "342b8c64996f1fde5990fd1948d1caf22cd5426b060a06366bb053031e92fa2c",
+      "modified_for_release": false
+    },
+    "src/solarwm/backends/wan22/runtime/camera.py": {
+      "sha256": "db2875217cf2a512914066dd789d6db85e5ebbe5d61c0d5a3b6a3ce1aad6faa0",
+      "release_sha256": "db2875217cf2a512914066dd789d6db85e5ebbe5d61c0d5a3b6a3ce1aad6faa0",
+      "modified_for_release": false
+    },
+    "src/solarwm/backends/wan22/runtime/distributed.py": {
+      "sha256": "49764848b1dc048d00598d51a23225712e9411750797c6e59e32448dc2695547",
+      "release_sha256": "49764848b1dc048d00598d51a23225712e9411750797c6e59e32448dc2695547",
+      "modified_for_release": false
+    },
+    "src/solarwm/backends/wan22/runtime/stage2.py": {
+      "sha256": "10e59b88998380aad4f1404f2034879b4dde73d73bee54f9ecdd3bbab4c2899e",
+      "release_sha256": "10e59b88998380aad4f1404f2034879b4dde73d73bee54f9ecdd3bbab4c2899e",
+      "modified_for_release": false
+    },
+    "src/solarwm/backends/wan22/runtime/codec.py": {
+      "sha256": "fd23c6a9727d8424c867aa6ccc4a7dcbe2819b6622c5cf98ae39566a5b2ceb3f",
+      "release_sha256": "fd23c6a9727d8424c867aa6ccc4a7dcbe2819b6622c5cf98ae39566a5b2ceb3f",
+      "modified_for_release": false
+    },
+    "src/solarwm/backends/wan22/runtime/readiness.py": {
+      "sha256": "e65a75b60acda39a08a17b49304edaeebe73bd6ea7a53fcda24dbe2c7683d70f",
+      "release_sha256": "e65a75b60acda39a08a17b49304edaeebe73bd6ea7a53fcda24dbe2c7683d70f",
+      "modified_for_release": false
+    },
+    "src/solarwm/backends/wan22/runtime/stage1_anyflow.py": {
+      "sha256": "9084a84c4e8d24d18700b72faddb69f12585d15f21ba772a84cf19d86dde50cf",
+      "release_sha256": "9084a84c4e8d24d18700b72faddb69f12585d15f21ba772a84cf19d86dde50cf",
+      "modified_for_release": false
+    },
+    "src/solarwm/backends/wan22/runtime/architectures/__init__.py": {
+      "sha256": "d482b0a07e7b45623b31f0b92a1b2990f63adedc032b6b572713d12730429d61",
+      "release_sha256": "d482b0a07e7b45623b31f0b92a1b2990f63adedc032b6b572713d12730429d61",
+      "modified_for_release": false
+    },
+    "src/solarwm/backends/wan22/runtime/modeling/t5.py": {
+      "sha256": "fd339ffa091e7e9d3975636a8a87162695833eaaed0f8a0190e8c806713732d0",
+      "release_sha256": "fd339ffa091e7e9d3975636a8a87162695833eaaed0f8a0190e8c806713732d0",
+      "modified_for_release": false
+    },
+    "src/solarwm/backends/wan22/runtime/modeling/model.py": {
+      "sha256": "07c3e0abd9311402115d0f7682c477afb1d5db5af534066787a20f2912b598ae",
+      "release_sha256": "07c3e0abd9311402115d0f7682c477afb1d5db5af534066787a20f2912b598ae",
+      "modified_for_release": false
+    },
+    "src/solarwm/backends/wan22/runtime/modeling/vae.py": {
+      "sha256": "02ac90f2d7dd3c211276ab834673c8fc7012255aecfc18b72b37eb30d34b9d35",
+      "release_sha256": "02ac90f2d7dd3c211276ab834673c8fc7012255aecfc18b72b37eb30d34b9d35",
+      "modified_for_release": false
+    },
+    "src/solarwm/backends/wan22/runtime/modeling/causal_model.py": {
+      "sha256": "716c7a02c1664f595af7283c6b8b63aa1a53a2fddfb50b7361b683e18dc23848",
+      "release_sha256": "716c7a02c1664f595af7283c6b8b63aa1a53a2fddfb50b7361b683e18dc23848",
+      "modified_for_release": false
+    },
+    "src/solarwm/backends/wan22/runtime/modeling/__init__.py": {
+      "sha256": "9bc1c2f433908c6e9cbf026b07423ae3b93e3285d261f03d1ea9834809a6fd20",
+      "release_sha256": "9bc1c2f433908c6e9cbf026b07423ae3b93e3285d261f03d1ea9834809a6fd20",
+      "modified_for_release": false
+    },
+    "src/solarwm/backends/wan22/runtime/modeling/camera_prope.py": {
+      "sha256": "f9d341d53485dd627d35b38ea89a629a22d37b6aca1e5633dd20f52564838c74",
+      "release_sha256": "f9d341d53485dd627d35b38ea89a629a22d37b6aca1e5633dd20f52564838c74",
+      "modified_for_release": false
+    },
+    "src/solarwm/backends/wan22/runtime/modeling/attention.py": {
+      "sha256": "455a53da95e695415a41f7cbe67cd28807aab4dfc1083793478ce6279b861efe",
+      "release_sha256": "455a53da95e695415a41f7cbe67cd28807aab4dfc1083793478ce6279b861efe",
+      "modified_for_release": false
+    },
+    "src/solarwm/backends/wan22/runtime/modeling/tokenizers.py": {
+      "sha256": "de8dc64185be707ef08c5330095afba19266f79409121eb28327b68c2394c2ec",
+      "release_sha256": "de8dc64185be707ef08c5330095afba19266f79409121eb28327b68c2394c2ec",
+      "modified_for_release": false
+    },
+    "src/solarwm/backends/ltx25/runtime.py": {
+      "sha256": "e8cf696061f6e18b22ad58a17bb2e22e1057cf3a2aee87a5c51039fa58e8d52e",
+      "release_sha256": "e8cf696061f6e18b22ad58a17bb2e22e1057cf3a2aee87a5c51039fa58e8d52e",
+      "modified_for_release": false
+    },
+    "src/solarwm/backends/ltx25/adapter.py": {
+      "sha256": "d65d04f9da7d310d52c563226deac96958b20f97079b40782543f967ee42b5c3",
+      "release_sha256": "d65d04f9da7d310d52c563226deac96958b20f97079b40782543f967ee42b5c3",
+      "modified_for_release": false
+    },
+    "src/solarwm/backends/ltx25/preencode.py": {
+      "sha256": "546b646593098f4b24578d7e9f414374be9ae07b0d64023f5b7d0847d353be6f",
+      "release_sha256": "546b646593098f4b24578d7e9f414374be9ae07b0d64023f5b7d0847d353be6f",
+      "modified_for_release": false
+    },
+    "src/solarwm/backends/ltx25/torch_training.py": {
+      "sha256": "b6495e3ed770a75162c655e848cb7d2100f20f7c557c52059f1602c8ea08a226",
+      "release_sha256": "b6495e3ed770a75162c655e848cb7d2100f20f7c557c52059f1602c8ea08a226",
+      "modified_for_release": false
+    },
+    "src/solarwm/backends/ltx25/torch_validation.py": {
+      "sha256": "2cae55d32bc1cd16ddab2e5acdcca1c7f557112ffab665db8764b9d0a3d9c4e5",
+      "release_sha256": "2cae55d32bc1cd16ddab2e5acdcca1c7f557112ffab665db8764b9d0a3d9c4e5",
+      "modified_for_release": false
+    },
+    "src/solarwm/backends/ltx25/torch_model.py": {
+      "sha256": "ffd3f2e2ef1c6838f9ac7808849991bfccdd5ac2e338b8f910c186f8c5960cb5",
+      "release_sha256": "ffd3f2e2ef1c6838f9ac7808849991bfccdd5ac2e338b8f910c186f8c5960cb5",
+      "modified_for_release": false
+    },
+    "src/solarwm/backends/ltx25/torch_inference.py": {
+      "sha256": "1b53e5ccab13c409a19127377e424b9c260388bb53d7f7fb1ee884068a369cde",
+      "release_sha256": "1b53e5ccab13c409a19127377e424b9c260388bb53d7f7fb1ee884068a369cde",
+      "modified_for_release": false
+    },
+    "src/solarwm/backends/ltx25/official.py": {
+      "sha256": "749764d90d5dffcf26d4c2dabc1cc17fa0a87d5ff4cf03be30bb8ee556d2f456",
+      "release_sha256": "749764d90d5dffcf26d4c2dabc1cc17fa0a87d5ff4cf03be30bb8ee556d2f456",
+      "modified_for_release": false
+    },
+    "src/solarwm/backends/ltx25/__init__.py": {
+      "sha256": "ab23d77f4b1679dbdf868a0d79b6640b52367869a4529d8040660c315c166de8",
+      "release_sha256": "ab23d77f4b1679dbdf868a0d79b6640b52367869a4529d8040660c315c166de8",
+      "modified_for_release": false
+    },
+    "src/solarwm/backends/ltx25/checkpoint.py": {
+      "sha256": "7e9c896ad96ea124175cba3b4c0dc2e514b2a12188683ba564021858e173bef6",
+      "release_sha256": "7e9c896ad96ea124175cba3b4c0dc2e514b2a12188683ba564021858e173bef6",
+      "modified_for_release": false
+    },
+    "src/solarwm/backends/ltx25/torch_data.py": {
+      "sha256": "9691bbbec87ec862c4a34753ea745a056342e1206901848ca9c9e3bb983707d9",
+      "release_sha256": "9691bbbec87ec862c4a34753ea745a056342e1206901848ca9c9e3bb983707d9",
+      "modified_for_release": false
+    },
+    "src/solarwm/backends/ltx25/torch_prope.py": {
+      "sha256": "62dfe71def81a345e035d78d7b71c8fe22c8f5667b6c9a9184b9e7c2d9231f04",
+      "release_sha256": "62dfe71def81a345e035d78d7b71c8fe22c8f5667b6c9a9184b9e7c2d9231f04",
+      "modified_for_release": false
+    },
+    "src/solarwm/backends/ltx25/inference.py": {
+      "sha256": "9a4a21e058e0d9454a7a062813836c0fac43f221f00a94608d78e6fd4da5fa1d",
+      "release_sha256": "9a4a21e058e0d9454a7a062813836c0fac43f221f00a94608d78e6fd4da5fa1d",
+      "modified_for_release": false
+    },
+    "src/solarwm/backends/ltx25/geometry.py": {
+      "sha256": "afac5261b8aedc3eebb2dc9449aa3c2fbfcb3f26c8fe3d6bb8b6768e705da81e",
+      "release_sha256": "afac5261b8aedc3eebb2dc9449aa3c2fbfcb3f26c8fe3d6bb8b6768e705da81e",
+      "modified_for_release": false
+    },
+    "src/solarwm/backends/ltx25/backend.py": {
+      "sha256": "521b8e06bfeb9fdadf38a58dcaf391d5e4940965b61cb7d5ac4e70691d42cd2b",
+      "release_sha256": "521b8e06bfeb9fdadf38a58dcaf391d5e4940965b61cb7d5ac4e70691d42cd2b",
+      "modified_for_release": false
+    },
+    "src/solarwm/backends/ltx25/preencode_transaction.py": {
+      "sha256": "28d8e5d9ffdf58b016d0129d433ecc494341fdd095e60fa09be1c0b8678fc2c3",
+      "release_sha256": "28d8e5d9ffdf58b016d0129d433ecc494341fdd095e60fa09be1c0b8678fc2c3",
+      "modified_for_release": false
+    },
+    "src/solarwm/backends/ltx25/artifact.py": {
+      "sha256": "d3155f9a7f3b8d63fe751b7c023ceb45fd01b7f55fbef4992c304ee0fc9a8aff",
+      "release_sha256": "d3155f9a7f3b8d63fe751b7c023ceb45fd01b7f55fbef4992c304ee0fc9a8aff",
+      "modified_for_release": false
+    },
+    "src/solarwm/backends/ltx25/camera.py": {
+      "sha256": "0de7e405dce129200e996440327d0ad994429ddf84855b34ca449dbafe4ec32a",
+      "release_sha256": "0de7e405dce129200e996440327d0ad994429ddf84855b34ca449dbafe4ec32a",
+      "modified_for_release": false
+    },
+    "src/solarwm/backends/ltx25/official_codec.py": {
+      "sha256": "293ca642e96a05ccc6268116cb18c073cb17c2d7bbadd734776de1a1744896aa",
+      "release_sha256": "293ca642e96a05ccc6268116cb18c073cb17c2d7bbadd734776de1a1744896aa",
+      "modified_for_release": false
+    },
+    "src/solarwm/backends/ltx25/torch_distributed.py": {
+      "sha256": "f153e0bbf54aa069189a1cc72ff92376e4c4a9bf159de365a6dacc1441f78535",
+      "release_sha256": "f153e0bbf54aa069189a1cc72ff92376e4c4a9bf159de365a6dacc1441f78535",
+      "modified_for_release": false
+    },
+    "src/solarwm/backends/ltx25/config.py": {
+      "sha256": "c472f64e3f8a54ac546fb2eb9cc880a31be9a6a3460eb87979bfe7f59cebc53a",
+      "release_sha256": "c472f64e3f8a54ac546fb2eb9cc880a31be9a6a3460eb87979bfe7f59cebc53a",
+      "modified_for_release": false
+    },
+    "src/solarwm/backends/ltx25/distributed.py": {
+      "sha256": "a0caf03d64547785b2a6ae7cd5e15e59cc63622db8d224f13300fc670c434450",
+      "release_sha256": "a0caf03d64547785b2a6ae7cd5e15e59cc63622db8d224f13300fc670c434450",
+      "modified_for_release": false
+    },
+    "src/solarwm/backends/ltx25/torch_flow.py": {
+      "sha256": "4d9a1a4a4d1dc5554941301eb11f0149b0b2fe5e22d6dbd8efc7c036bad327da",
+      "release_sha256": "4d9a1a4a4d1dc5554941301eb11f0149b0b2fe5e22d6dbd8efc7c036bad327da",
+      "modified_for_release": false
+    },
+    "src/solarwm/backends/ltx25/codec.py": {
+      "sha256": "0ce0258159f14d8fe38f838991b16666e4172865d27c19e81626dc9dc334330f",
+      "release_sha256": "0ce0258159f14d8fe38f838991b16666e4172865d27c19e81626dc9dc334330f",
+      "modified_for_release": false
+    },
+    "src/solarwm/backends/ltx25/readiness.py": {
+      "sha256": "ee56588a533fdab401aa95db6e9f8ca89de0a5a8b24967ef3a3b1656b00605b4",
+      "release_sha256": "ee56588a533fdab401aa95db6e9f8ca89de0a5a8b24967ef3a3b1656b00605b4",
+      "modified_for_release": false
+    },
+    "src/solarwm/backends/ltx25/torch_raw.py": {
+      "sha256": "62dccdf259691748b6915b200bf8727b2ef22770d8e6557a3ace824b2b013234",
+      "release_sha256": "62dccdf259691748b6915b200bf8727b2ef22770d8e6557a3ace824b2b013234",
+      "modified_for_release": false
+    },
+    "src/solarwm/backends/ltx25/flow.py": {
+      "sha256": "b5a880eeb448b5afe380fff67fb24aa47a995f7d9d3eb0192599e62796c2a9a6",
+      "release_sha256": "b5a880eeb448b5afe380fff67fb24aa47a995f7d9d3eb0192599e62796c2a9a6",
+      "modified_for_release": false
+    },
+    "src/solarwm/config/loader.py": {
+      "sha256": "c306b4135cf87fe517b982420f8609e9f098278f7c47b61769e8a16111044d07",
+      "release_sha256": "c306b4135cf87fe517b982420f8609e9f098278f7c47b61769e8a16111044d07",
+      "modified_for_release": false
+    },
+    "src/solarwm/config/__init__.py": {
+      "sha256": "60726f693a64fd14929bbf365e6a1d9d2e76375c7e8e2530cb1f27d4f42eea7d",
+      "release_sha256": "60726f693a64fd14929bbf365e6a1d9d2e76375c7e8e2530cb1f27d4f42eea7d",
+      "modified_for_release": false
+    },
+    "src/solarwm/config/routes.py": {
+      "sha256": "342f9ee9eb51ef87d08091b9bb39129389d2ff67776ef2e0d05c25771cbe4579",
+      "release_sha256": "342f9ee9eb51ef87d08091b9bb39129389d2ff67776ef2e0d05c25771cbe4579",
+      "modified_for_release": false
+    },
+    "src/solarwm/data/archive.py": {
+      "sha256": "7af15a8c24c46f2ecaf4fe2c29d5bff2cbe68a6e80eb90a173e1231fe90989ae",
+      "release_sha256": "7af15a8c24c46f2ecaf4fe2c29d5bff2cbe68a6e80eb90a173e1231fe90989ae",
+      "modified_for_release": false
+    },
+    "src/solarwm/data/transport.py": {
+      "sha256": "a3d3fd881519b74fd8d06a380262cededf9982e79d67af0645135f821c9ebf2c",
+      "release_sha256": "a3d3fd881519b74fd8d06a380262cededf9982e79d67af0645135f821c9ebf2c",
+      "modified_for_release": false
+    },
+    "src/solarwm/data/index.py": {
+      "sha256": "7669d09e68a6f5665b5051b8948d5036b3806a5c6af511178d8e6d0a25552b12",
+      "release_sha256": "7669d09e68a6f5665b5051b8948d5036b3806a5c6af511178d8e6d0a25552b12",
+      "modified_for_release": false
+    },
+    "src/solarwm/data/__init__.py": {
+      "sha256": "3d7a3376f16d091bc10fcfce05111e219e9343963c89efb84359ac1a45618f12",
+      "release_sha256": "3d7a3376f16d091bc10fcfce05111e219e9343963c89efb84359ac1a45618f12",
+      "modified_for_release": false
+    },
+    "src/solarwm/data/camera.py": {
+      "sha256": "d79a4e65748c33ae1faed8b0bb54434d641ea8cbdd3dc3f249c4f27414cad39f",
+      "release_sha256": "d79a4e65748c33ae1faed8b0bb54434d641ea8cbdd3dc3f249c4f27414cad39f",
+      "modified_for_release": false
+    },
+    "src/solarwm/data/prefetch.py": {
+      "sha256": "c9b6d303fe73ed8523092e2b9c943fd9c55d5519c629ed82521e1941ccae1199",
+      "release_sha256": "c9b6d303fe73ed8523092e2b9c943fd9c55d5519c629ed82521e1941ccae1199",
+      "modified_for_release": false
+    },
+    "src/solarwm/data/sampling.py": {
+      "sha256": "6ac3e867087a31a356cb309e94a890133921446c1da7deb852e502e39e3a5c9e",
+      "release_sha256": "6ac3e867087a31a356cb309e94a890133921446c1da7deb852e502e39e3a5c9e",
+      "modified_for_release": false
+    },
+    "src/solarwm/training/engine.py": {
+      "sha256": "f44ab866b4a198fc779ee0b20695939f4a9e7110217e4fd99dd5ec3a4f5c04e6",
+      "release_sha256": "f44ab866b4a198fc779ee0b20695939f4a9e7110217e4fd99dd5ec3a4f5c04e6",
+      "modified_for_release": false
+    },
+    "src/solarwm/training/schedule.py": {
+      "sha256": "bd9a3a967b96b4dd26dde1a1d095fe2e8e345452139f06a34e4ebfde992d503f",
+      "release_sha256": "bd9a3a967b96b4dd26dde1a1d095fe2e8e345452139f06a34e4ebfde992d503f",
+      "modified_for_release": false
+    },
+    "src/solarwm/training/anyflow.py": {
+      "sha256": "263e05cad130062fa97445973b0f97652df16faec2beca4c324d0d0cb0684256",
+      "release_sha256": "263e05cad130062fa97445973b0f97652df16faec2beca4c324d0d0cb0684256",
+      "modified_for_release": false
+    },
+    "src/solarwm/training/__init__.py": {
+      "sha256": "bef3d11db3bcc2b02ad5dd62473eccb6e5ce2eb8b3c4c7ce15c0e43fc3b06915",
+      "release_sha256": "bef3d11db3bcc2b02ad5dd62473eccb6e5ce2eb8b3c4c7ce15c0e43fc3b06915",
+      "modified_for_release": false
+    },
+    "src/solarwm/training/sgf.py": {
+      "sha256": "fd55f03d12341c301b333fc71c09281bab58085712321446dd7364f97291bcfb",
+      "release_sha256": "fd55f03d12341c301b333fc71c09281bab58085712321446dd7364f97291bcfb",
+      "modified_for_release": false
+    },
+    "src/solarwm/training/optim.py": {
+      "sha256": "1f7bd4a141caf78b60b67341c2bc268eac527dcfe5232bb15c211bb24f8a8400",
+      "release_sha256": "1f7bd4a141caf78b60b67341c2bc268eac527dcfe5232bb15c211bb24f8a8400",
+      "modified_for_release": false
+    },
+    "src/solarwm/training/ema.py": {
+      "sha256": "0ec6a3b42d44260569537617b99a51ee8d135576753d220ecfcdd228dc71b1b7",
+      "release_sha256": "0ec6a3b42d44260569537617b99a51ee8d135576753d220ecfcdd228dc71b1b7",
+      "modified_for_release": false
+    },
+    "src/lynnreal_hand/backends/h3/_runtime/full_fusion.py": {
+      "sha256": "bc6f8f24d9434693b22a8d49b0a118d5a38ef0eccdb82f42e1a0bf62b684f553",
+      "release_sha256": "bc6f8f24d9434693b22a8d49b0a118d5a38ef0eccdb82f42e1a0bf62b684f553",
+      "modified_for_release": false
+    },
+    "src/lynnreal_hand/backends/h3/_runtime/sgf_fp_int8_tma_v2.py": {
+      "sha256": "76637b0116d44bb44ac8ab17e165b63a6c24c3085a774fe15af3b152054563b7",
+      "release_sha256": "76637b0116d44bb44ac8ab17e165b63a6c24c3085a774fe15af3b152054563b7",
+      "modified_for_release": false
+    },
+    "src/lynnreal_hand/backends/h3/_runtime/sparse_gate.py": {
+      "sha256": "06810da7814153250c34d575726da2f596f2edf5304492298c72d7701932909c",
+      "release_sha256": "06810da7814153250c34d575726da2f596f2edf5304492298c72d7701932909c",
+      "modified_for_release": false
+    },
+    "src/lynnreal_hand/backends/h3/_runtime/sparse_kernel.py": {
+      "sha256": "e13bd6619bb5033c1f82b02e38cb2e49aec601d5e2da7bc8bcbfc3801ac315ed",
+      "release_sha256": "e13bd6619bb5033c1f82b02e38cb2e49aec601d5e2da7bc8bcbfc3801ac315ed",
+      "modified_for_release": false
+    },
+    "src/lynnreal_hand/backends/h3/_runtime/sgf_fp_int8_gemm_v2.py": {
+      "sha256": "c617d7cf839d889f91e38836827faea79c989b5c6ef54c927abc3db6f7e0cb6d",
+      "release_sha256": "c617d7cf839d889f91e38836827faea79c989b5c6ef54c927abc3db6f7e0cb6d",
+      "modified_for_release": false
+    },
+    "src/lynnreal_hand/backends/h3/_runtime/int8_dispatch.py": {
+      "sha256": "b71092d7b077160adcb26d9a69d5da4d405c9b2657bbedf56b3eb8dd571a4b90",
+      "release_sha256": "47aa783a422093e90c9153c3e9f5907be5ac61e7f936173684cba4b73a4e944d",
+      "modified_for_release": true
+    },
+    "src/lynnreal_hand/backends/h3/_runtime/deploy_helpers.py": {
+      "sha256": "bfc1255934f095b1d9a3eaaa9b810d4837487c19b7c8ccad2821486e3dc16dad",
+      "release_sha256": "cc4b4c0a8a0a4d2374f8ae767feaf38959d954399fe190a22e12d792559bfdf1",
+      "modified_for_release": true
+    },
+    "src/lynnreal_hand/backends/h3/_runtime/condition_policy.py": {
+      "sha256": "e8b824566dad14baadcc25eb245887252ad362bf89fceeb588cb8d81166c5222",
+      "release_sha256": "e8b824566dad14baadcc25eb245887252ad362bf89fceeb588cb8d81166c5222",
+      "modified_for_release": false
+    },
+    "src/lynnreal_hand/backends/h3/_runtime/sparse_hand.py": {
+      "sha256": "871049dc17977b22d106268f2fcc931b95ea270f34a78ebf84c3b81d9b143a65",
+      "release_sha256": "c1d5ac2da9429ec8cb7111d1f63549c83313f77b6bc298e74f9cbb6b58bd8872",
+      "modified_for_release": true
+    },
+    "src/lynnreal_hand/backends/h3/_runtime/native/kv_transfer.py": {
+      "sha256": "f4a7abe27d447d7bdf3b27f1d22d1ce9a8b5bdcd4d5de066cf3da171d274b3bb",
+      "release_sha256": "f4a7abe27d447d7bdf3b27f1d22d1ce9a8b5bdcd4d5de066cf3da171d274b3bb",
+      "modified_for_release": false
+    },
+    "src/lynnreal_hand/backends/h3/_runtime/native/upstream_qknorm_rope.py": {
+      "sha256": "617705b1e6a1af8a71ee9868476eb774446d89ec855c60baefab998ac46756f3",
+      "release_sha256": "617705b1e6a1af8a71ee9868476eb774446d89ec855c60baefab998ac46756f3",
+      "modified_for_release": false
+    },
+    "src/lynnreal_hand/backends/h3/_runtime/native/reference_kv.py": {
+      "sha256": "2d0178022e20d0eb3bc8932a653cc548333645c0d402dbd44fbfecda906d882e",
+      "release_sha256": "2d0178022e20d0eb3bc8932a653cc548333645c0d402dbd44fbfecda906d882e",
+      "modified_for_release": false
+    },
+    "src/lynnreal_hand/backends/h3/_runtime/native/core.py": {
+      "sha256": "365dd7ad81477d84394a8b144c50eec952cb0ce6dd5a1a3dfa0905cfe0413333",
+      "release_sha256": "365dd7ad81477d84394a8b144c50eec952cb0ce6dd5a1a3dfa0905cfe0413333",
+      "modified_for_release": false
+    },
+    "src/lynnreal_hand/backends/h3/_runtime/native/kv.py": {
+      "sha256": "459d6e461c2d49a82f0bddb848aa2f2527767e81cdad5ad4c3314ede33ded0c0",
+      "release_sha256": "8bfe237978a6a2efecd3eed83b9eb90494c395e954aeac745fcb3334f6a1e340",
+      "modified_for_release": true
+    },
+    "src/lynnreal_hand/backends/h3/_runtime/native/stage1_hand_aux_v5/runtime.py": {
+      "sha256": "6ba5e97f0bf4e731c07ae59d7898b0d2d1a30c4cab30a822f12e0739da692fd7",
+      "release_sha256": "6ba5e97f0bf4e731c07ae59d7898b0d2d1a30c4cab30a822f12e0739da692fd7",
+      "modified_for_release": false
+    },
+    "src/lynnreal_hand/backends/h3/_runtime/native/stage1_hand_aux_v5/media.py": {
+      "sha256": "d975448e1cd4eb823c7066085886cd16c5a0945b092d7ff7dac3b4680dbe3491",
+      "release_sha256": "d975448e1cd4eb823c7066085886cd16c5a0945b092d7ff7dac3b4680dbe3491",
+      "modified_for_release": false
+    },
+    "src/lynnreal_hand/backends/h3/_runtime/native/stage1_hand_aux_v5/auxiliary.py": {
+      "sha256": "8e062e20d25a4fb715f795bc6a9b7e801863555f4612463d896a38f25327b283",
+      "release_sha256": "8e062e20d25a4fb715f795bc6a9b7e801863555f4612463d896a38f25327b283",
+      "modified_for_release": false
+    },
+    "src/lynnreal_hand/backends/h3/_runtime/native/stage1_hand_aux_v5/__init__.py": {
+      "sha256": "2277fd7a95ea0c17b24e8a414b813c2985e3e8096caab4dc3874946af7a81bde",
+      "release_sha256": "2277fd7a95ea0c17b24e8a414b813c2985e3e8096caab4dc3874946af7a81bde",
+      "modified_for_release": false
+    },
+    "src/lynnreal_hand/backends/h3/_runtime/native/stage1_hand_aux_v5/regions.py": {
+      "sha256": "b8e3de3d139cfd97856cb75bc53d23f2c0d4fbfba4a6ddb9ad03c99b77a88cae",
+      "release_sha256": "b8e3de3d139cfd97856cb75bc53d23f2c0d4fbfba4a6ddb9ad03c99b77a88cae",
+      "modified_for_release": false
+    },
+    "src/lynnreal_hand/backends/h3/_runtime/native/stage1_hand_aux_v5/core.py": {
+      "sha256": "6c79df27deac3990261ab06954e152642fedcbc96250bc0d78f8076cc9c85de1",
+      "release_sha256": "6c79df27deac3990261ab06954e152642fedcbc96250bc0d78f8076cc9c85de1",
+      "modified_for_release": false
+    },
+    "src/lynnreal_hand/backends/h3/_runtime/native/stage1_hand_aux_v5/losses.py": {
+      "sha256": "d5d7596b49968baa143e4e5398e2c7adca10bd8a4b003f8a5e36b2afdae67e04",
+      "release_sha256": "d5d7596b49968baa143e4e5398e2c7adca10bd8a4b003f8a5e36b2afdae67e04",
+      "modified_for_release": false
+    },
+    "src/lynnreal_hand/backends/h3/_runtime/native/stage1_hand_aux_v5/memory_gate.py": {
+      "sha256": "63f729ada63da07ea7393ac7d737c9fc013022101fdb4a89c2f7a9790c7dbd00",
+      "release_sha256": "63f729ada63da07ea7393ac7d737c9fc013022101fdb4a89c2f7a9790c7dbd00",
+      "modified_for_release": false
+    },
+    "src/lynnreal_hand/backends/h3/_runtime/lynn_kernels/int8_tma.py": {
+      "sha256": "80b4ac2c3a6840e42d9efa6bf9e938468b4ad384eadf7a3b9f501c150f8b5457",
+      "release_sha256": "80b4ac2c3a6840e42d9efa6bf9e938468b4ad384eadf7a3b9f501c150f8b5457",
+      "modified_for_release": false
+    },
+    "src/lynnreal_hand/backends/h3/_runtime/lynn_kernels/kernels.py": {
+      "sha256": "dc719d8c491778bcdffdcfdd1963f3f55c088ca49901a44ff9539babc2adad60",
+      "release_sha256": "dc719d8c491778bcdffdcfdd1963f3f55c088ca49901a44ff9539babc2adad60",
+      "modified_for_release": false
+    },
+    "src/lynnreal_hand/backends/h3/_runtime/lynn_kernels/__init__.py": {
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "release_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "modified_for_release": false
+    },
+    "src/lynnreal_hand/backends/h3/_runtime/lynn_kernels/int8.py": {
+      "sha256": "0d4c9ebdeeaf40b946af0d590f62008d32bca0b480154cbfbe996f44aa344895",
+      "release_sha256": "0d4c9ebdeeaf40b946af0d590f62008d32bca0b480154cbfbe996f44aa344895",
+      "modified_for_release": false
+    },
+    "src/lynnreal_hand/backends/h3/_runtime/lynn_kernels/int8_gemm.py": {
+      "sha256": "0b7106b63006eccb20ffd167a5f1f640609242d03326d6c53edc18bdd59ad3e2",
+      "release_sha256": "0b7106b63006eccb20ffd167a5f1f640609242d03326d6c53edc18bdd59ad3e2",
+      "modified_for_release": false
+    },
+    "src/lynnreal_hand/backends/h3/_runtime/precision_boundary.py": {
+      "sha256": "44a56a68dcae562323538619dcfeed1a10738e8bf829acad05bd521b4230b0b9",
+      "release_sha256": "4ce4cad10fbf612d887d2bc50e748a7b423d0865c753f8d5d3b55afd5ae0c2a2",
+      "modified_for_release": true
+    },
+    "src/lynnreal_hand/backends/h3/_runtime/native_kernel_ops.py": {
+      "sha256": "15d33dc5db2f05e15b0ca76e660269926edefa75eedd620045dd253aae172622",
+      "release_sha256": "03f59113b66afa933306ed9d597348a46e4c97c90b672ca9b62178d7c59c7e31",
+      "modified_for_release": true
+    },
+    "src/lynnreal_hand/backends/h3/_runtime/codec540.py": {
+      "sha256": "44a8e8852932bac2676fa97c05c853f6e61295bc42043611a45850f2127a60a4",
+      "release_sha256": "44a8e8852932bac2676fa97c05c853f6e61295bc42043611a45850f2127a60a4",
+      "modified_for_release": false
+    },
+    "src/lynnreal_hand/backends/h3/_runtime/duomatching_image_v1.py": {
+      "sha256": "8c230d1116144ff2909be0a40f26086c9c6276671fe04a371a03d01c8c12185a",
+      "release_sha256": "f228a1a47087600a61f65c89bd388ef2c3716f122f14c832378b17a3ec09b8d8",
+      "modified_for_release": true
+    },
+    "src/lynnreal_hand/backends/h3/_runtime/duomatching_h3_bridge_v1.py": {
+      "sha256": "5bc01a0c1cb62786d5115aced111ae86f04d2c67044698ca0051a60291b38fb2",
+      "release_sha256": "5bc01a0c1cb62786d5115aced111ae86f04d2c67044698ca0051a60291b38fb2",
+      "modified_for_release": false
+    },
+    "src/lynnreal_hand/backends/h3/_runtime/official_stage05_gradnorm_fp64_v1.py": {
+      "sha256": "72dbc0f6f5da798716fa266d47fc1890340d1dc3293ea14580481e58542e41f2",
+      "release_sha256": "72dbc0f6f5da798716fa266d47fc1890340d1dc3293ea14580481e58542e41f2",
+      "modified_for_release": false
+    },
+    "src/lynnreal_hand/backends/h3/_runtime/stage2_dmd_handwarmup_v2/image_aux.py": {
+      "sha256": "8a649066fc468e6c64c3a8be2492e30a011a55121717f52e3b2e778af8b9c96f",
+      "release_sha256": "a4a2dbcce63b5e74a5637738253b0cf71d3973a7487e0261e3cb3110e4e1b603",
+      "modified_for_release": true
+    },
+    "src/lynnreal_hand/backends/h3/_runtime/duo_reference/wan/__init__.py": {
+      "sha256": "57ab6ade565ffd009e93af44a529040b2b145fe7e28af599a31a1d67432427a8",
+      "release_sha256": "57ab6ade565ffd009e93af44a529040b2b145fe7e28af599a31a1d67432427a8",
+      "modified_for_release": false
+    },
+    "src/lynnreal_hand/backends/h3/_runtime/duo_reference/wan/modules/t5.py": {
+      "sha256": "1c1bbe9d2e1a3d204bdc3b9fe07071409f856536d3423d5352b21220cf607924",
+      "release_sha256": "1c1bbe9d2e1a3d204bdc3b9fe07071409f856536d3423d5352b21220cf607924",
+      "modified_for_release": false
+    },
+    "src/lynnreal_hand/backends/h3/_runtime/duo_reference/wan/modules/model.py": {
+      "sha256": "9b48da1c5773aacdbc634d80ed5e3def1253d60dc5335c670071f409222079ac",
+      "release_sha256": "9b48da1c5773aacdbc634d80ed5e3def1253d60dc5335c670071f409222079ac",
+      "modified_for_release": false
+    },
+    "src/lynnreal_hand/backends/h3/_runtime/duo_reference/wan/modules/vae.py": {
+      "sha256": "a4c1d9362f25a1bef463ac51caed4097317c007d4d87887b02a3a733fdbc48d5",
+      "release_sha256": "a4c1d9362f25a1bef463ac51caed4097317c007d4d87887b02a3a733fdbc48d5",
+      "modified_for_release": false
+    },
+    "src/lynnreal_hand/backends/h3/_runtime/duo_reference/wan/modules/causal_model.py": {
+      "sha256": "d962d1ade3b848fdde25ab39090a1be436b039e4a7621255d18283361dc1dd51",
+      "release_sha256": "d962d1ade3b848fdde25ab39090a1be436b039e4a7621255d18283361dc1dd51",
+      "modified_for_release": false
+    },
+    "src/lynnreal_hand/backends/h3/_runtime/duo_reference/wan/modules/__init__.py": {
+      "sha256": "6cba8c084de01455a914a3b5620e0a286d4dee2c39143b6508bb8fac87e71b4b",
+      "release_sha256": "6cba8c084de01455a914a3b5620e0a286d4dee2c39143b6508bb8fac87e71b4b",
+      "modified_for_release": false
+    },
+    "src/lynnreal_hand/backends/h3/_runtime/duo_reference/wan/modules/attention.py": {
+      "sha256": "02ad719a76e6bdec79d18fc62b094ef2ad7c28b2d593c9f395ae1226041b7c9d",
+      "release_sha256": "02ad719a76e6bdec79d18fc62b094ef2ad7c28b2d593c9f395ae1226041b7c9d",
+      "modified_for_release": false
+    },
+    "src/lynnreal_hand/backends/h3/_runtime/duo_reference/wan/modules/tokenizers.py": {
+      "sha256": "cf5b189c1ae017326efadab2fc6380ba223fa7a59d0be6464bd264db53c76934",
+      "release_sha256": "cf5b189c1ae017326efadab2fc6380ba223fa7a59d0be6464bd264db53c76934",
+      "modified_for_release": false
+    },
+    "src/lynnreal_hand/backends/h3/_runtime/duo_reference/utils/qwen_image_wrapper.py": {
+      "sha256": "3d26d3ff819578d79b1270122bcc8e550a4406be5619e52edadc4d81d8e425b9",
+      "release_sha256": "3d26d3ff819578d79b1270122bcc8e550a4406be5619e52edadc4d81d8e425b9",
+      "modified_for_release": false
+    },
+    "src/lynnreal_hand/backends/h3/_runtime/duo_reference/utils/scheduler.py": {
+      "sha256": "8594726b0aed7d998341304ee051a7dbd0cfa0a6c73a13075b687059e45cec6f",
+      "release_sha256": "8594726b0aed7d998341304ee051a7dbd0cfa0a6c73a13075b687059e45cec6f",
+      "modified_for_release": false
+    },
+    "src/lynnreal_hand/backends/h3/_runtime/duo_reference/utils/wan_wrapper.py": {
+      "sha256": "f132e4f6655449073278bef33e9f1b60395aaa90cc646e76965bfc02c24616f9",
+      "release_sha256": "f132e4f6655449073278bef33e9f1b60395aaa90cc646e76965bfc02c24616f9",
+      "modified_for_release": false
+    },
+    "src/lynnreal_hand/backends/h3/_runtime/duo_reference/utils/qwen_timestep_scheduler.py": {
+      "sha256": "aaaff0bafbfcb627ceeaa9970715169e5ccb42b38e9492a75fae95b8a91b405b",
+      "release_sha256": "aaaff0bafbfcb627ceeaa9970715169e5ccb42b38e9492a75fae95b8a91b405b",
+      "modified_for_release": false
+    },
+    "src/lynnreal_hand/backends/h3/_runtime/duo_reference/utils/__init__.py": {
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "release_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "modified_for_release": false
+    },
+    "src/lynnreal_hand/backends/h3/_runtime/duo_reference/utils/checkpoint.py": {
+      "sha256": "e25701a472c6c4fc82c47919c0822f0719b563f0fbad54a9d9630cef5777b86f",
+      "release_sha256": "e25701a472c6c4fc82c47919c0822f0719b563f0fbad54a9d9630cef5777b86f",
+      "modified_for_release": false
+    },
+    "src/lynnreal_hand/backends/h3/_runtime/duo_reference/utils/paths.py": {
+      "sha256": "27ef5cc3a634fd946e02a2f2fa7b26da485abb0bb4e757573063eda5774f3c93",
+      "release_sha256": "27ef5cc3a634fd946e02a2f2fa7b26da485abb0bb4e757573063eda5774f3c93",
+      "modified_for_release": false
+    },
+    "src/lynnreal_hand/backends/h3/_runtime/duo_reference/utils/loss.py": {
+      "sha256": "5a08ba589ef54d5deb50d1ff1984f2969b1fdc2f03c53751167eb23a7082ecfe",
+      "release_sha256": "5a08ba589ef54d5deb50d1ff1984f2969b1fdc2f03c53751167eb23a7082ecfe",
+      "modified_for_release": false
+    },
+    "src/lynnreal_hand/backends/h3/_runtime/duo_reference/utils/misc.py": {
+      "sha256": "610bead16d50d99fabdccb2e9ce3c20fa1fa1cd3bdf735d7ff7ffda978bfe195",
+      "release_sha256": "610bead16d50d99fabdccb2e9ce3c20fa1fa1cd3bdf735d7ff7ffda978bfe195",
+      "modified_for_release": false
+    },
+    "src/lynnreal_hand/backends/h3/_runtime/duo_reference/utils/frame_latent_adapter.py": {
+      "sha256": "61e36c094d6bf951c1990bae4927e1cbb1d5db32625c7b9eac44bcb78437e849",
+      "release_sha256": "61e36c094d6bf951c1990bae4927e1cbb1d5db32625c7b9eac44bcb78437e849",
+      "modified_for_release": false
+    },
+    "src/lynnreal_hand/backends/h3/_runtime/duo_reference/utils/distributed.py": {
+      "sha256": "38ee5f7ba55ae4fd7eb0aca7316b8b721cc50b7572bb54c7f9a7444f22491035",
+      "release_sha256": "38ee5f7ba55ae4fd7eb0aca7316b8b721cc50b7572bb54c7f9a7444f22491035",
+      "modified_for_release": false
+    },
+    "src/lynnreal_hand/backends/h3/_runtime/duo_reference/utils/dataset.py": {
+      "sha256": "4b09a66830cc1e352f6566458decde7f8de36f7e4b459c07075805bc04060f3c",
+      "release_sha256": "4b09a66830cc1e352f6566458decde7f8de36f7e4b459c07075805bc04060f3c",
+      "modified_for_release": false
+    },
+    "src/lynnreal_hand/backends/h3/_runtime/duo_reference/model/dmd.py": {
+      "sha256": "62a1ba9050833daafcedf9ca6c352c74a37e9dcce141fd48d610f5db37296f6f",
+      "release_sha256": "62a1ba9050833daafcedf9ca6c352c74a37e9dcce141fd48d610f5db37296f6f",
+      "modified_for_release": false
+    },
+    "src/lynnreal_hand/models/thin_h3_student/model.py": {
+      "sha256": "e23daed9d57bf5ffd1ce5dab156629b73fd328d9e0a65ab74cd87a9e9c5552d7",
+      "release_sha256": "e23daed9d57bf5ffd1ce5dab156629b73fd328d9e0a65ab74cd87a9e9c5552d7",
+      "modified_for_release": false
+    },
+    "src/lynnreal_hand/models/thin_h3_student/vae_int8_tma.py": {
+      "sha256": "8beade7434e5bde69147aed1f03fa00de8f5b4a79dc119f4e94d984dec2aed27",
+      "release_sha256": "8beade7434e5bde69147aed1f03fa00de8f5b4a79dc119f4e94d984dec2aed27",
+      "modified_for_release": false
+    },
+    "src/lynnreal_hand/models/thin_h3_student/vae_precision_runtime.py": {
+      "sha256": "1dc14ef76da89c4f26ee96992c4b9718551ee02c5d86e0be8b649940592b7ecd",
+      "release_sha256": "1dc14ef76da89c4f26ee96992c4b9718551ee02c5d86e0be8b649940592b7ecd",
+      "modified_for_release": false
+    },
+    "src/lynnreal_hand/models/thin_h3_student/stable_vae_ops.py": {
+      "sha256": "f4170b82697f761dadac1a88cf22c110d0589232b3d5ae7bd3a53ab16e385121",
+      "release_sha256": "f4170b82697f761dadac1a88cf22c110d0589232b3d5ae7bd3a53ab16e385121",
+      "modified_for_release": false
+    },
+    "src/lynnreal_hand/models/thin_h3_student/__init__.py": {
+      "sha256": "3011049f4a75bfd9bfa58a3747656a5c48b857b3aa3fe907602181cfc79ed3bd",
+      "release_sha256": "3011049f4a75bfd9bfa58a3747656a5c48b857b3aa3fe907602181cfc79ed3bd",
+      "modified_for_release": false
+    },
+    "src/lynnreal_hand/models/thin_h3_student/h3_fa3_policy.py": {
+      "sha256": "a31f2579a6fef6a9ee8f6f15a62228f52573b90969118ebce9ac25afc0ffd5b7",
+      "release_sha256": "a31f2579a6fef6a9ee8f6f15a62228f52573b90969118ebce9ac25afc0ffd5b7",
+      "modified_for_release": false
+    },
+    "src/lynnreal_hand/models/thin_h3_student/inference.py": {
+      "sha256": "1e2129767ae8bd90de354cde25ff6873f287154b4010825d353ac607904d08bc",
+      "release_sha256": "b355b9c0594ca04ebe88148a375cb2e99d8fcdaf62bbb0d78385dc14556c548f",
+      "modified_for_release": true
+    },
+    "src/lynnreal_hand/models/thin_h3_student/fused_quant_vae.py": {
+      "sha256": "c79a1dfef35affce589615d372600198037c06ba0dfb46063b364162232482b5",
+      "release_sha256": "c79a1dfef35affce589615d372600198037c06ba0dfb46063b364162232482b5",
+      "modified_for_release": false
+    },
+    "src/lynnreal_hand/models/thin_h3_student/vae_lowprecision.py": {
+      "sha256": "5b0ae784c41c749a6bf0c9abb57bea3b31f765b8bb7464b9c1e75a3a159395ad",
+      "release_sha256": "5b0ae784c41c749a6bf0c9abb57bea3b31f765b8bb7464b9c1e75a3a159395ad",
+      "modified_for_release": false
+    },
+    "src/lynnreal_hand/models/tiny_hand.py": {
+      "sha256": "99545f093b36c16297ad182ce18a5dce2ebc98bb611f5e8dfa2dce431ba39ce2",
+      "release_sha256": "99545f093b36c16297ad182ce18a5dce2ebc98bb611f5e8dfa2dce431ba39ce2",
+      "modified_for_release": false
+    }
+  }
+}

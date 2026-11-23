@@ -1,0 +1,23 @@
+__pycache__/
+*.py[cod]
+.venv/
+.env
+outputs/
+.cache/
+*.egg-info/
+checkpoints/**/*.safetensors
+checkpoints/**/*.bin
+checkpoints/**/*.pt
+checkpoints/**/*.pth
+checkpoints/**/snapshots/
+data/
+build/
+dist/
+.pytest_cache/
+
+checkpoints/hf_repos/**/*.log
+
+# Local model publication staging and workspace-specific upload helpers.
+checkpoints/hf_repos/
+scripts/create_hf_repos.py
+scripts/publish_hf_weights.py

@@ -1,0 +1,5 @@
+integrated_multimodal_description: [Shot 1] Live-action, cinematic, first-person POV, a close shot frames the viewer's own two hands above a plain table with a small wooden puzzle. The left hand slides a small wooden panel while the right hand holds the frame, then both hands rotate the puzzle and press it open. Both hands stay in view with all fingers clearly readable. The camera holds a static shot with a slight handheld sway. Even diffused light keeps every detail visible. The surroundings stay simple and out of focus.
+
+overall_soundscape: Wooden pieces slide with a soft scrape and click open with a gentle snap.
+
+non_diegetic_music: N/A

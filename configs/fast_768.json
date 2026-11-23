@@ -1,0 +1,28 @@
+{
+  "stage": "stage3",
+  "model": {
+    "checkpoint_path": "${weights_root}/fast",
+    "transformer_subfolder": "transformer",
+    "torch_dtype": "bfloat16",
+    "local_files_only": true,
+    "attention_backend": "_flash_3"
+  },
+  "conditioning": {
+    "checkpoint_path": "${weights_root}/foundation"
+  },
+  "video": {
+    "height": 768,
+    "width": 1344
+  },
+  "sampling": {
+    "steps": 3,
+    "shift": 3.0,
+    "window": 2,
+    "guidance_scale": 1.0,
+    "precompute_adaln": false
+  },
+  "anyflow_gate": 0.25,
+  "hand_encoder": "${weights_root}/fast/hand_encoder",
+  "decoder": "${weights_root}/vae",
+  "decoder_compile": true
+}

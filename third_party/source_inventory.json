@@ -1,0 +1,486 @@
+{
+  "description": "Code source hashes, retained attribution, and inference-package adaptations.",
+  "updated_utc": "2026-11-16",
+  "release_scope": "LynnReal-Hand Base and Fast inference",
+  "files": {
+    "src/lynnreal_hand/backends/h3/_runtime/geometry.py": {
+      "source_inventory_index": 3,
+      "source_sha256": "e64e0273ffeab1638ed74c4e8bfce16fa7e278c9f1296235e2f8ec0795fc13de",
+      "release_sha256": "11c689da9b8309e51b2222f45bcf9c307b5cbffbd08726c844c6aad744ac51f5",
+      "modified_for_release": true
+    },
+    "src/lynnreal_hand/backends/h3/_runtime/lynn_decoder.py": {
+      "source_inventory_index": 6,
+      "source_sha256": "02667d918ec345201d97626d08538a9d43d654aa131d27f4ac7bc644ff69757c",
+      "release_sha256": "8bbdad4c69308502e67997d621994a74db61293e8c3f2f1fecd6b6df3f9ce9f3",
+      "modified_for_release": true
+    },
+    "src/lynnreal_hand/backends/h3/_runtime/h3_components/loader.py": {
+      "source_inventory_index": 7,
+      "source_sha256": "fa2a6f816f110bbda003cc7ed4ad7739e7e564c0c06120804e9a1506560a8438",
+      "release_sha256": "8bab9abd3ae3daba1a29fd7a4c6b9589df042aa98acfb6892b30fd02501db742",
+      "modified_for_release": true
+    },
+    "src/lynnreal_hand/backends/h3/_runtime/h3_components/layout.py": {
+      "source_inventory_index": 8,
+      "source_sha256": "4674719c38f45daca02a5938f7fe235f0a924ca102dc7f085d8bb90c1310d43d",
+      "release_sha256": "f182fc2966b8cef46246ddbe61c9462116c4e1300758581f385d6a17fd2f19dd",
+      "modified_for_release": true
+    },
+    "src/lynnreal_hand/backends/h3/_runtime/h3_fa3_policy.py": {
+      "source_inventory_index": 9,
+      "source_sha256": "a31f2579a6fef6a9ee8f6f15a62228f52573b90969118ebce9ac25afc0ffd5b7",
+      "release_sha256": "a31f2579a6fef6a9ee8f6f15a62228f52573b90969118ebce9ac25afc0ffd5b7",
+      "modified_for_release": false
+    },
+    "src/lynnreal_hand/backends/h3/_runtime/fa3_autograd_policy.py": {
+      "source_inventory_index": 10,
+      "source_sha256": "c45af86c08977344c376831035f8eb9af64bc6d31bd7825921fe743bd620b5a4",
+      "release_sha256": "8f8dab8b94fff34d9a4c2fa8f069d91ba7cb44b27d7f47ce88df52a92bc3eb32",
+      "modified_for_release": true
+    },
+    "src/lynnreal_hand/backends/h3/_runtime/exact_kernels/install.py": {
+      "source_inventory_index": 12,
+      "source_sha256": "99ed2279013bd03bf8739137206d5a075743d2c9fa0ff9a3b997e6bc857c8609",
+      "release_sha256": "80ed3e27fd271d69b59fb0576952d0b90e9d86a69bfb38e09d9de9de40ca9a09",
+      "modified_for_release": true
+    },
+    "src/lynnreal_hand/backends/h3/_runtime/h3_components/__init__.py": {
+      "source_inventory_index": 16,
+      "source_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "release_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "modified_for_release": false
+    },
+    "src/lynnreal_hand/backends/h3/_runtime/exact_kernels/rotary_dispatch.py": {
+      "source_inventory_index": 19,
+      "source_sha256": "70179d62ed7ee5839e122c33a4f7e1f9c9825a56a176f6d671484e0ac16dbb22",
+      "release_sha256": "6dc66a1e12b87d4d865df54124147e1168f1e130bececaf49bcbc8f55b1ffbb4",
+      "modified_for_release": true
+    },
+    "src/lynnreal_hand/backends/h3/_runtime/exact_kernels/pointwise_ops.py": {
+      "source_inventory_index": 21,
+      "source_sha256": "b8cf589087508da884388dcdaba9928bd8d346520c6503498c6504934a937780",
+      "release_sha256": "c337bebace1935d0e8a147cdc5707fd0b7508952d77fec99005da7195a590cca",
+      "modified_for_release": true
+    },
+    "src/lynnreal_hand/backends/h3/_runtime/exact_kernels/__init__.py": {
+      "source_inventory_index": 22,
+      "source_sha256": "513ad4c6de127b5137f798653c29bd6648cc2cba9b12f4942e51b2a93ebe5aec",
+      "release_sha256": "513ad4c6de127b5137f798653c29bd6648cc2cba9b12f4942e51b2a93ebe5aec",
+      "modified_for_release": false
+    },
+    "src/lynnreal_hand/backends/h3/_runtime/exact_kernels/rotary_ops.py": {
+      "source_inventory_index": 25,
+      "source_sha256": "c2c28ec1919ac06f90462f0a2e73c9b4af84a5bb45b463e561c89e61e5622dca",
+      "release_sha256": "a050c53220d004adf660ff82d24eeb65d5d7d1cade1f99023b7ff3c95ba0ca08",
+      "modified_for_release": true
+    },
+    "src/lynnreal_hand/backends/h3/_runtime/exact_kernels/rotary_wide_ops.py": {
+      "source_inventory_index": 26,
+      "source_sha256": "bd4b57e1ddbdca1704543f0b4e6d93a656b6aae1dbd90a4b108ff60a4c4110fe",
+      "release_sha256": "e0ac0808be6718064ed1470d49914e47c7f39c2f9e1f9600eaa1a977b0574372",
+      "modified_for_release": true
+    },
+    "src/lynnreal_hand/backends/h3/_runtime/exact_kernels/pointwise_kernels.py": {
+      "source_inventory_index": 28,
+      "source_sha256": "9f7701a68c0f65f30d8b23391d3b25f5e2887494b66228bc634363ea3df9c7b3",
+      "release_sha256": "042dbdc676aad38a592bd48d6db0738d98d73a72c05ff371d523a1687a5dcf10",
+      "modified_for_release": true
+    },
+    "src/lynnreal_hand/backends/h3/_runtime/exact_kernels/rotary_kernels.py": {
+      "source_inventory_index": 29,
+      "source_sha256": "1f918c672726fa6ce552d14b29946dbe59f5fbb9e49453a6d09109c6837f8886",
+      "release_sha256": "1f918c672726fa6ce552d14b29946dbe59f5fbb9e49453a6d09109c6837f8886",
+      "modified_for_release": false
+    },
+    "src/lynnreal_hand/backends/h3/_runtime/exact_kernels/rotary_wide_kernels.py": {
+      "source_inventory_index": 30,
+      "source_sha256": "55dd77f3d9534c8e300f09aee487249744c58279154d570e4124d05bbd9c2b0e",
+      "release_sha256": "37df52f8389bab949b585768f7ce94c7f57ce4815dda5217d6b5d98b86898dc4",
+      "modified_for_release": true
+    },
+    "src/lynnreal_core/errors.py": {
+      "source_inventory_index": 31,
+      "source_sha256": "2b0cc2f2a805ffab04424f6a23e1c45bcfc5f68ed1e1073324fbad5c9505c99c",
+      "release_sha256": "57286626654875bc75a288cd89370510d5fa7c302239c0544266c321649c944a",
+      "modified_for_release": true
+    },
+    "src/lynnreal_core/__init__.py": {
+      "source_inventory_index": 33,
+      "source_sha256": "726dca7cf7469c087cc3a84827539e02b7cb4063859690ef09e0c4dbcb3ac6ca",
+      "release_sha256": "ac95142410ad64d2cb3463e0e12375905a67cec910e466b75a7dc49d0c3ff314",
+      "modified_for_release": true
+    },
+    "src/lynnreal_core/version.py": {
+      "source_inventory_index": 34,
+      "source_sha256": "f94613a4af2546ecdcc3d0445a47411f22624bfbe3be0d0fd3a5a8db1b3efaeb",
+      "release_sha256": "f94613a4af2546ecdcc3d0445a47411f22624bfbe3be0d0fd3a5a8db1b3efaeb",
+      "modified_for_release": false
+    },
+    "src/lynnreal_core/backends/__init__.py": {
+      "source_inventory_index": 55,
+      "source_sha256": "4b1cc0fb39af636e804fae3a8fd5c9a0f6b0cf005ada967625707859a515e222",
+      "release_sha256": "aa5bc478e1f1f90628de84e75fb504f03d66273fffeb11e46c48c3cdf83a0eac",
+      "modified_for_release": true
+    },
+    "src/lynnreal_core/backends/minimax_h3/torch_geometry.py": {
+      "source_inventory_index": 60,
+      "source_sha256": "e3756de06f89379392d9d48a4d234d62a452c4372a20d8c1b110b85cfbf97f70",
+      "release_sha256": "e3756de06f89379392d9d48a4d234d62a452c4372a20d8c1b110b85cfbf97f70",
+      "modified_for_release": false
+    },
+    "src/lynnreal_core/backends/minimax_h3/model.py": {
+      "source_inventory_index": 61,
+      "source_sha256": "0e96e3001af7f8f085ef60ecae601ca426d7fc3e8d18be48add46d3a56a77984",
+      "release_sha256": "81d6f5e403bf82e5f7518252df289b07830fa4be605d01771fbbe1d7f0f27219",
+      "modified_for_release": true
+    },
+    "src/lynnreal_core/backends/minimax_h3/mask.py": {
+      "source_inventory_index": 68,
+      "source_sha256": "b73defdf2b6e1ab507ffe47c8607675f67393889f4bb7a2da08fc3968fa095a7",
+      "release_sha256": "b73defdf2b6e1ab507ffe47c8607675f67393889f4bb7a2da08fc3968fa095a7",
+      "modified_for_release": false
+    },
+    "src/lynnreal_core/backends/minimax_h3/__init__.py": {
+      "source_inventory_index": 69,
+      "source_sha256": "4cc00f2968da8b13e519e553d43003dc7700a73f80c621155114da84b876366a",
+      "release_sha256": "7fbcc083efff819051e09c1f365c83bcee423de7197a9b8c0f71ef1d53f8d600",
+      "modified_for_release": true
+    },
+    "src/lynnreal_core/backends/minimax_h3/torch_prope.py": {
+      "source_inventory_index": 73,
+      "source_sha256": "7df70405e1223c362da82e50bf2fb80ca65f8c88f0ef1ffb1c7ac0e8b282bdfc",
+      "release_sha256": "7903c5c839eb315265e978896e0536f4e62c0c117d0324d97b445682ae90ce19",
+      "modified_for_release": true
+    },
+    "src/lynnreal_core/backends/minimax_h3/layout.py": {
+      "source_inventory_index": 74,
+      "source_sha256": "64edb57b50bf9bf15e9919768d775cbfdd03394fe25b66c929c8941787d9049b",
+      "release_sha256": "a8320f8dd83f5b1ce8ae72869fd50b1aa606c5e39619396099d3a7a02715aaf4",
+      "modified_for_release": true
+    },
+    "src/lynnreal_core/backends/minimax_h3/geometry.py": {
+      "source_inventory_index": 78,
+      "source_sha256": "3d17d2077e44a5ceaddeafb5a86b5027ca65330d45c627fbc4460fc80b353fa4",
+      "release_sha256": "3d17d2077e44a5ceaddeafb5a86b5027ca65330d45c627fbc4460fc80b353fa4",
+      "modified_for_release": false
+    },
+    "src/lynnreal_core/backends/minimax_h3/anyflow_conditioning.py": {
+      "source_inventory_index": 81,
+      "source_sha256": "7c85d26c0e2e22606162256288730dbc126fb2464802e400eb27c98f14c9c64d",
+      "release_sha256": "7c85d26c0e2e22606162256288730dbc126fb2464802e400eb27c98f14c9c64d",
+      "modified_for_release": false
+    },
+    "src/lynnreal_core/backends/minimax_h3/camera.py": {
+      "source_inventory_index": 83,
+      "source_sha256": "8247c1443fc033d1b5d5bf428f29827618b2fdeec516e2cd64079fa1b00bb113",
+      "release_sha256": "c72da2d483b6532bf44e035e5f7a888f2370c49bd0203da14aedff5cdc34415b",
+      "modified_for_release": true
+    },
+    "src/lynnreal_core/backends/minimax_h3/official_codec.py": {
+      "source_inventory_index": 84,
+      "source_sha256": "38da2c4295c9d28ef6dc8529a082a1d8c37410dc16eb1450aa8288c5310321de",
+      "release_sha256": "c5b76c998120901842f5ea57e2c058ac945b06b8aeeb990a3f18dc72f80a7b30",
+      "modified_for_release": true
+    },
+    "src/lynnreal_core/backends/minimax_h3/fsdp.py": {
+      "source_inventory_index": 86,
+      "source_sha256": "2b649e930ab0c4eb4fb3f0ca666d2f884b2fc4d2ae52c7bcf053a9426061f042",
+      "release_sha256": "989557faa23944f4cb93fd845dbd2e1e770cd70749a78fd5b6f5525e0163b7bb",
+      "modified_for_release": true
+    },
+    "src/lynnreal_core/backends/minimax_h3/distributed.py": {
+      "source_inventory_index": 90,
+      "source_sha256": "e0e5d11e269e42b71d4422a1c9f5bc14c26cca931736d3c4088e7b5fee3730eb",
+      "release_sha256": "e9ec82c8e24e5cb1cbe06ee3da8acfc806ceeaf4239f3ebb53f7ca1288b48108",
+      "modified_for_release": true
+    },
+    "src/lynnreal_core/backends/minimax_h3/torch_mask.py": {
+      "source_inventory_index": 92,
+      "source_sha256": "fefc9d5f06e7802f1c15e4cc25c9fa555731aede68ac887c42faab0fed018b32",
+      "release_sha256": "fefc9d5f06e7802f1c15e4cc25c9fa555731aede68ac887c42faab0fed018b32",
+      "modified_for_release": false
+    },
+    "src/lynnreal_core/backends/minimax_h3/sgf_attention.py": {
+      "source_inventory_index": 94,
+      "source_sha256": "3eacc2effd9cf2621337775d90735585633b11d09c2f9aa3d7c7e24a7f94f6d2",
+      "release_sha256": "3eacc2effd9cf2621337775d90735585633b11d09c2f9aa3d7c7e24a7f94f6d2",
+      "modified_for_release": false
+    },
+    "src/lynnreal_core/backends/minimax_h3/diffusers_compat.py": {
+      "source_inventory_index": 98,
+      "source_sha256": "cfb59b95965e110efdf0956431c63cde3147f2ccb4324d8489cd49ee08e80707",
+      "release_sha256": "ba7fc77c52f0ff29be8c7e50b4e4bd00e862bffbcd455b1d327e1b2847c535d5",
+      "modified_for_release": true
+    },
+    "src/lynnreal_hand/backends/h3/_runtime/full_fusion.py": {
+      "source_inventory_index": 185,
+      "source_sha256": "bc6f8f24d9434693b22a8d49b0a118d5a38ef0eccdb82f42e1a0bf62b684f553",
+      "release_sha256": "6b969129d5be88934e04d233a16dd6a470e3ef116f00c6e450ab3e7c9488e021",
+      "modified_for_release": true
+    },
+    "src/lynnreal_hand/backends/h3/_runtime/int8_tma_backend.py": {
+      "source_inventory_index": 186,
+      "source_sha256": "76637b0116d44bb44ac8ab17e165b63a6c24c3085a774fe15af3b152054563b7",
+      "release_sha256": "76637b0116d44bb44ac8ab17e165b63a6c24c3085a774fe15af3b152054563b7",
+      "modified_for_release": false
+    },
+    "src/lynnreal_hand/backends/h3/_runtime/sparse_gate.py": {
+      "source_inventory_index": 187,
+      "source_sha256": "06810da7814153250c34d575726da2f596f2edf5304492298c72d7701932909c",
+      "release_sha256": "06810da7814153250c34d575726da2f596f2edf5304492298c72d7701932909c",
+      "modified_for_release": false
+    },
+    "src/lynnreal_hand/backends/h3/_runtime/sparse_kernel.py": {
+      "source_inventory_index": 188,
+      "source_sha256": "e13bd6619bb5033c1f82b02e38cb2e49aec601d5e2da7bc8bcbfc3801ac315ed",
+      "release_sha256": "e13bd6619bb5033c1f82b02e38cb2e49aec601d5e2da7bc8bcbfc3801ac315ed",
+      "modified_for_release": false
+    },
+    "src/lynnreal_hand/backends/h3/_runtime/int8_gemm_compat.py": {
+      "source_inventory_index": 189,
+      "source_sha256": "c617d7cf839d889f91e38836827faea79c989b5c6ef54c927abc3db6f7e0cb6d",
+      "release_sha256": "33acd6accc18b03baf19fb36f85140e6dcbafa2240ec22558643a6666d5c6241",
+      "modified_for_release": true
+    },
+    "src/lynnreal_hand/backends/h3/_runtime/int8_dispatch.py": {
+      "source_inventory_index": 190,
+      "source_sha256": "b71092d7b077160adcb26d9a69d5da4d405c9b2657bbedf56b3eb8dd571a4b90",
+      "release_sha256": "5971cae7ae3f604fe7eea9558aa41c8da9daa6c24fad071ae2f7445f573c2b85",
+      "modified_for_release": true
+    },
+    "src/lynnreal_hand/backends/h3/_runtime/deploy_helpers.py": {
+      "source_inventory_index": 191,
+      "source_sha256": "bfc1255934f095b1d9a3eaaa9b810d4837487c19b7c8ccad2821486e3dc16dad",
+      "release_sha256": "cc4b4c0a8a0a4d2374f8ae767feaf38959d954399fe190a22e12d792559bfdf1",
+      "modified_for_release": true
+    },
+    "src/lynnreal_hand/backends/h3/_runtime/condition_policy.py": {
+      "source_inventory_index": 192,
+      "source_sha256": "e8b824566dad14baadcc25eb245887252ad362bf89fceeb588cb8d81166c5222",
+      "release_sha256": "e8b824566dad14baadcc25eb245887252ad362bf89fceeb588cb8d81166c5222",
+      "modified_for_release": false
+    },
+    "src/lynnreal_hand/backends/h3/_runtime/sparse_hand.py": {
+      "source_inventory_index": 193,
+      "source_sha256": "871049dc17977b22d106268f2fcc931b95ea270f34a78ebf84c3b81d9b143a65",
+      "release_sha256": "c1d5ac2da9429ec8cb7111d1f63549c83313f77b6bc298e74f9cbb6b58bd8872",
+      "modified_for_release": true
+    },
+    "src/lynnreal_hand/backends/h3/_runtime/native/kv_transfer.py": {
+      "source_inventory_index": 194,
+      "source_sha256": "f4a7abe27d447d7bdf3b27f1d22d1ce9a8b5bdcd4d5de066cf3da171d274b3bb",
+      "release_sha256": "f4a7abe27d447d7bdf3b27f1d22d1ce9a8b5bdcd4d5de066cf3da171d274b3bb",
+      "modified_for_release": false
+    },
+    "src/lynnreal_hand/backends/h3/_runtime/native/upstream_qknorm_rope.py": {
+      "source_inventory_index": 195,
+      "source_sha256": "617705b1e6a1af8a71ee9868476eb774446d89ec855c60baefab998ac46756f3",
+      "release_sha256": "617705b1e6a1af8a71ee9868476eb774446d89ec855c60baefab998ac46756f3",
+      "modified_for_release": false
+    },
+    "src/lynnreal_hand/backends/h3/_runtime/native/reference_kv.py": {
+      "source_inventory_index": 196,
+      "source_sha256": "2d0178022e20d0eb3bc8932a653cc548333645c0d402dbd44fbfecda906d882e",
+      "release_sha256": "d03ec6f062f132dea1de7130046713ccb1208ae6a623b6e3732ac9e7f122a9eb",
+      "modified_for_release": true
+    },
+    "src/lynnreal_hand/backends/h3/_runtime/native/kv.py": {
+      "source_inventory_index": 198,
+      "source_sha256": "459d6e461c2d49a82f0bddb848aa2f2527767e81cdad5ad4c3314ede33ded0c0",
+      "release_sha256": "fa5bffb26eaf3413de9ae64c8edfbaf0ef208b5d82eb95900e7582e8a323b5f6",
+      "modified_for_release": true
+    },
+    "src/lynnreal_hand/backends/h3/_runtime/lynn_kernels/int8_tma.py": {
+      "source_inventory_index": 207,
+      "source_sha256": "80b4ac2c3a6840e42d9efa6bf9e938468b4ad384eadf7a3b9f501c150f8b5457",
+      "release_sha256": "80b4ac2c3a6840e42d9efa6bf9e938468b4ad384eadf7a3b9f501c150f8b5457",
+      "modified_for_release": false
+    },
+    "src/lynnreal_hand/backends/h3/_runtime/lynn_kernels/kernels.py": {
+      "source_inventory_index": 208,
+      "source_sha256": "dc719d8c491778bcdffdcfdd1963f3f55c088ca49901a44ff9539babc2adad60",
+      "release_sha256": "dc719d8c491778bcdffdcfdd1963f3f55c088ca49901a44ff9539babc2adad60",
+      "modified_for_release": false
+    },
+    "src/lynnreal_hand/backends/h3/_runtime/lynn_kernels/__init__.py": {
+      "source_inventory_index": 209,
+      "source_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "release_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "modified_for_release": false
+    },
+    "src/lynnreal_hand/backends/h3/_runtime/lynn_kernels/int8.py": {
+      "source_inventory_index": 210,
+      "source_sha256": "0d4c9ebdeeaf40b946af0d590f62008d32bca0b480154cbfbe996f44aa344895",
+      "release_sha256": "0d4c9ebdeeaf40b946af0d590f62008d32bca0b480154cbfbe996f44aa344895",
+      "modified_for_release": false
+    },
+    "src/lynnreal_hand/backends/h3/_runtime/lynn_kernels/int8_gemm.py": {
+      "source_inventory_index": 211,
+      "source_sha256": "0b7106b63006eccb20ffd167a5f1f640609242d03326d6c53edc18bdd59ad3e2",
+      "release_sha256": "0b7106b63006eccb20ffd167a5f1f640609242d03326d6c53edc18bdd59ad3e2",
+      "modified_for_release": false
+    },
+    "src/lynnreal_hand/backends/h3/_runtime/precision_boundary.py": {
+      "source_inventory_index": 212,
+      "source_sha256": "44a56a68dcae562323538619dcfeed1a10738e8bf829acad05bd521b4230b0b9",
+      "release_sha256": "774b1d5834b41d13e4641bbf520f5a39774f86f7af48b2afd00e8c18752dd763",
+      "modified_for_release": true
+    },
+    "src/lynnreal_hand/backends/h3/_runtime/native_kernel_ops.py": {
+      "source_inventory_index": 213,
+      "source_sha256": "15d33dc5db2f05e15b0ca76e660269926edefa75eedd620045dd253aae172622",
+      "release_sha256": "03f59113b66afa933306ed9d597348a46e4c97c90b672ca9b62178d7c59c7e31",
+      "modified_for_release": true
+    },
+    "src/lynnreal_hand/backends/h3/_runtime/codec540.py": {
+      "source_inventory_index": 214,
+      "source_sha256": "44a8e8852932bac2676fa97c05c853f6e61295bc42043611a45850f2127a60a4",
+      "release_sha256": "5258c807809c5f621798d63d130ee26b2a92806ddda36ffca84fc8c6a431940d",
+      "modified_for_release": true
+    },
+    "src/lynnreal_hand/models/ultra_fast_vae/model.py": {
+      "source_inventory_index": 240,
+      "source_sha256": "e23daed9d57bf5ffd1ce5dab156629b73fd328d9e0a65ab74cd87a9e9c5552d7",
+      "release_sha256": "e23daed9d57bf5ffd1ce5dab156629b73fd328d9e0a65ab74cd87a9e9c5552d7",
+      "modified_for_release": false
+    },
+    "src/lynnreal_hand/models/ultra_fast_vae/vae_int8_tma.py": {
+      "source_inventory_index": 241,
+      "source_sha256": "8beade7434e5bde69147aed1f03fa00de8f5b4a79dc119f4e94d984dec2aed27",
+      "release_sha256": "8beade7434e5bde69147aed1f03fa00de8f5b4a79dc119f4e94d984dec2aed27",
+      "modified_for_release": false
+    },
+    "src/lynnreal_hand/models/ultra_fast_vae/vae_precision_runtime.py": {
+      "source_inventory_index": 242,
+      "source_sha256": "1dc14ef76da89c4f26ee96992c4b9718551ee02c5d86e0be8b649940592b7ecd",
+      "release_sha256": "84a9d4a2d578ebdbc9c85e8f5fb51af162b7cce00bc4f6f0dc76092572629642",
+      "modified_for_release": true
+    },
+    "src/lynnreal_hand/models/ultra_fast_vae/stable_vae_ops.py": {
+      "source_inventory_index": 243,
+      "source_sha256": "f4170b82697f761dadac1a88cf22c110d0589232b3d5ae7bd3a53ab16e385121",
+      "release_sha256": "a6cfd91909c7faf463c53b607deaccb68982a1c04677a4794dcec7d56332f2cb",
+      "modified_for_release": true
+    },
+    "src/lynnreal_hand/models/ultra_fast_vae/__init__.py": {
+      "source_inventory_index": 244,
+      "source_sha256": "3011049f4a75bfd9bfa58a3747656a5c48b857b3aa3fe907602181cfc79ed3bd",
+      "release_sha256": "3011049f4a75bfd9bfa58a3747656a5c48b857b3aa3fe907602181cfc79ed3bd",
+      "modified_for_release": false
+    },
+    "src/lynnreal_hand/models/ultra_fast_vae/h3_fa3_policy.py": {
+      "source_inventory_index": 245,
+      "source_sha256": "a31f2579a6fef6a9ee8f6f15a62228f52573b90969118ebce9ac25afc0ffd5b7",
+      "release_sha256": "a31f2579a6fef6a9ee8f6f15a62228f52573b90969118ebce9ac25afc0ffd5b7",
+      "modified_for_release": false
+    },
+    "src/lynnreal_hand/models/ultra_fast_vae/inference.py": {
+      "source_inventory_index": 246,
+      "source_sha256": "1e2129767ae8bd90de354cde25ff6873f287154b4010825d353ac607904d08bc",
+      "release_sha256": "ef275f4053d1e77506dc9230647ba2b9484f3ba7e306e9c5b120dc2f3b7189cf",
+      "modified_for_release": true
+    },
+    "src/lynnreal_hand/models/ultra_fast_vae/fused_quant_vae.py": {
+      "source_inventory_index": 247,
+      "source_sha256": "c79a1dfef35affce589615d372600198037c06ba0dfb46063b364162232482b5",
+      "release_sha256": "14abef517083d0ffb6b77b56ded71859c9373f52e0feb8ec1ead0a1f79a32791",
+      "modified_for_release": true
+    },
+    "src/lynnreal_hand/models/ultra_fast_vae/vae_lowprecision.py": {
+      "source_inventory_index": 248,
+      "source_sha256": "5b0ae784c41c749a6bf0c9abb57bea3b31f765b8bb7464b9c1e75a3a159395ad",
+      "release_sha256": "5b0ae784c41c749a6bf0c9abb57bea3b31f765b8bb7464b9c1e75a3a159395ad",
+      "modified_for_release": false
+    },
+    "src/lynnreal_hand/models/tiny_hand.py": {
+      "source_inventory_index": 249,
+      "source_sha256": "99545f093b36c16297ad182ce18a5dce2ebc98bb611f5e8dfa2dce431ba39ce2",
+      "release_sha256": "99545f093b36c16297ad182ce18a5dce2ebc98bb611f5e8dfa2dce431ba39ce2",
+      "modified_for_release": false
+    },
+    "src/lynnreal_hand/backends/h3/_runtime/inference_core.py": {
+      "source_inventory_indices": [
+        11,
+        0
+      ],
+      "derived_from_commit": "8a53c2341e39495b5b2874764dccfad8d16c449c",
+      "inference_helpers_only": true,
+      "release_sha256": "e512655e9557c1ed50fe0232dffcb1423b68368d71f16d32c2022eb02d4dca27",
+      "modified_for_release": true
+    },
+    "src/lynnreal_hand/backends/h3/_runtime/base_conditioning.py": {
+      "source_inventory_indices": [
+        4,
+        5
+      ],
+      "derived_from_commit": "8a53c2341e39495b5b2874764dccfad8d16c449c",
+      "inference_helpers_only": true,
+      "release_sha256": "cdda2581c8b090eb0cf1cd45645de01e5f6161bce6907c38fb90ddd28ba77d80",
+      "modified_for_release": true
+    },
+    "src/lynnreal_hand/backends/h3/_runtime/video_decode.py": {
+      "source_inventory_indices": [
+        18
+      ],
+      "derived_from_commit": "8a53c2341e39495b5b2874764dccfad8d16c449c",
+      "inference_helpers_only": true,
+      "release_sha256": "fd21d8b265f8d8a9302c49fa8e653e54c86730552d2fb0e62cf54716954bffe8",
+      "modified_for_release": true
+    },
+    "src/lynnreal_core/backends/minimax_h3/loading.py": {
+      "source_inventory_indices": [
+        57
+      ],
+      "derived_from_commit": "8a53c2341e39495b5b2874764dccfad8d16c449c",
+      "inference_helpers_only": true,
+      "release_sha256": "286dd40d534601616bdf6067312b1492069004048b4f5a52faf2bb191526f369",
+      "modified_for_release": true
+    },
+    "src/lynnreal_hand/inference/adaln.py": {
+      "release_sha256": "d1f0fd31444e1b42d5e9c2ecf6630f43de564aaef06c9c1b868b751a2eaf278a",
+      "new_for_release": true,
+      "modified_for_release": true
+    }
+  },
+  "portability_changes": [
+    "Package-relative backend and decoder architecture imports; no original workspace code directory required.",
+    "Public JSON configuration, inference-only condition preparation and Base/Fast generation interfaces.",
+    "Source deployment operators and W2 clock retained; removed unused Monarch dependency and private encoder loader.",
+    "Source sampling loop exposed as a streaming iterator with delivery before clean KV commit.",
+    "Tensor-only VAE packages use config/weight checksums rather than requiring Python in the weight directory.",
+    "Internal backend namespace renamed to lynnreal_core; original source attribution and legal records retained in acknowledgements. Tensor names, shapes and inference schedules are preserved.",
+    "Extracted inference-only packing, schedules and model invocation; removed training objectives/replay and all non-H3 backends.",
+    "Fast inference loads a sampling-specialized transformer with streaming time conditioning; reference and accelerated paths use the same exported weights.",
+    "Pinned public Transformers 5.14.1 and Diffusers 0.40.0 after real GPU preparation exposed an incompatible Qwen API in 4.57.x.",
+    "Pinned public FA3 source build helper and anonymous, scoped downloads; matching hand encoder included in Fast.",
+    "Portable downloaded inference recipes and model indexes are supported without replacing checked-in configs.",
+    "FA3 startup gradient verification explicitly leaves outer inference mode, then restores the caller context.",
+    "Exact block kernels are installed before streaming attention, matching the source single-H200 engine.",
+    "FA3 build enables both DiT BF16/128 and decoder FP16/64; installation smoke-tests both profiles when CUDA is available.",
+    "Complete model snapshots can resolve bundled official conditioning components and the Fast decoder locally.",
+    "Compact inference exports load sampling-specific AdaLN modulation tables directly and omit learned block projections; original export sources are read-only.",
+    "Use stable inference module names for H3 components, fused kernels, and Ultra-Fast-VAE; retain serialized model formats and numerical operations.",
+    "Remove an unused private query-fusion hook; retain native query normalization and exact rotary dispatch in streaming attention.",
+    "Native 1344x768 Fast inference reuses the released 768p Ultra-Fast-VAE interface and derives packed sampler geometry from cache dimensions; the 540p default and sampling schedule are retained."
+  ],
+  "original_inventory": "third_party/acknowledgements/upstream_inventory.json",
+  "original_inventory_sha256": "eb00b086a61b0143851598de9f1867f6585066f0462426516f8c46ed73e98088",
+  "model_repositories": {
+    "base": {
+      "repo_id": "shaohao011/LynnReal-Hand-Base-1.0",
+      "revision": "ce99765b7a332b850c9e94d213997aef0eb618b6",
+      "private": false
+    },
+    "fast": {
+      "repo_id": "shaohao011/LynnReal-Hand-Fast-preview",
+      "revision": "5770e69e142ff14219a2bc31de7996f341e7757e",
+      "private": false
+    },
+    "vae": {
+      "repo_id": "shaohao011/LynnReal-ultra-fast-vae-1.0",
+      "revision": "1ceaa7721653ce366f2031c525876a656f7b7fb1",
+      "private": false
+    }
+  }
+}

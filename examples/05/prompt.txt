@@ -1,0 +1,5 @@
+integrated_multimodal_description: [Shot 1] Live-action, cinematic, first-person POV, a close shot frames the viewer's own two hands in a plain room with a cat. The right hand strokes the cat's back while the left hand holds a small toy; the cat leans into the hand and purrs. Both hands remain clearly visible the entire shot. The camera pulls out with small amplitude at slow speed. Warm light fills the scene. The surroundings stay simple and out of focus.
+
+overall_soundscape: The cat purrs softly, with a faint rustle of fur under the hand.
+
+non_diegetic_music: A soft warm piano phrase at a slow tempo.

@@ -1,0 +1,54 @@
+[
+  {
+    "path": "overlay/diffusers/models/autoencoders/autoencoder_kl_minimax_h3.py",
+    "sha256": "4c3c9745ee27d16ff343c4998244bad41cd8f4213f0029cf7ce11ebb6d72ca1b"
+  },
+  {
+    "path": "overlay/diffusers/models/autoencoders/autoencoder_kl_minimax_h3_audio.py",
+    "sha256": "b56c5bb95a7dc99ace03df192544615c89ec01ac3b134a7f1dd7348b03731d57"
+  },
+  {
+    "path": "overlay/diffusers/models/transformers/transformer_minimax_h3.py",
+    "sha256": "1926b1bc15a5bebda05e3dc8cde1b3955d56641ba7f8f9d6e90c8f78c66ae30c"
+  },
+  {
+    "path": "overlay/diffusers/modular_pipelines/minimax_h3/__init__.py",
+    "sha256": "14a5c1943f6fbb8049ded5c2bae80c853483e0e82bbdbb130723f8c79b1faf59"
+  },
+  {
+    "path": "overlay/diffusers/modular_pipelines/minimax_h3/before_denoise.py",
+    "sha256": "530b007c1d689c3ee1fc1690527f5253522d2da6b44dd326bec99faaf9f72fff"
+  },
+  {
+    "path": "overlay/diffusers/modular_pipelines/minimax_h3/before_encoder.py",
+    "sha256": "03612baa8b983d058884d2c1740e57342279a1124002553f78cec98abcfc7c28"
+  },
+  {
+    "path": "overlay/diffusers/modular_pipelines/minimax_h3/decoders.py",
+    "sha256": "db553956502537613d17f83a5e1ac44f880b46514d254115676c0efe49ca0776"
+  },
+  {
+    "path": "overlay/diffusers/modular_pipelines/minimax_h3/denoise.py",
+    "sha256": "bf0224f3ac8f3bba8366599143f60d78bd14e9faf77cdb207a844549bb8c1dc4"
+  },
+  {
+    "path": "overlay/diffusers/modular_pipelines/minimax_h3/encoders.py",
+    "sha256": "fea751a889752ba58f1528acbc23b223e827ea707a75e2ae0c43d4a53ce758af"
+  },
+  {
+    "path": "overlay/diffusers/modular_pipelines/minimax_h3/modular_blocks_minimax_h3.py",
+    "sha256": "78b093a1062266dd52b3dbb0b00d56335bed4c81aba7ce4badb80ccc3a7b4811"
+  },
+  {
+    "path": "overlay/diffusers/modular_pipelines/minimax_h3/modular_pipeline.py",
+    "sha256": "9d5284ac8390f97d3e5eb3e0a50eddf25e04e7a12ff7fe063409b3cbd333b0ff"
+  },
+  {
+    "path": "overlay/diffusers/modular_pipelines/minimax_h3/references.py",
+    "sha256": "9d20d0031ca1bc98b4556c73845601f3f69f995d702a954c160265303da160cb"
+  },
+  {
+    "path": "overlay/diffusers/schedulers/scheduling_minimax_h3.py",
+    "sha256": "307d5bf755337ef00c47237f9ac8be116e627d26e1df3b5f0bd504a80f9de8dd"
+  }
+]

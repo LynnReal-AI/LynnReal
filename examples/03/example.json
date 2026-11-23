@@ -1,0 +1,13 @@
+{
+  "id": "example_03",
+  "description": "Preparing ingredients",
+  "frames": 124,
+  "fps": 24.0,
+  "seed": 42,
+  "image": "image.png",
+  "hand_video": "hand.mp4",
+  "camera": "camera.npz",
+  "caption": "For the target video, at 0.00 seconds into the target video, <Picture 1> (from [Shot 1]) is fully referenced.\nintegrated_multimodal_description: [Shot 1] <Picture 1> shows a top-down view of a kitchen counter featuring a white electric stove on the right and a black countertop on the left. A wooden cutting board holds a knife with a blue handle and a halved white onion, while an orange package labeled \"Mac n' Cheese\" lies near a tablet displaying a blue interface. Both hands are positioned over a small bowl with a blue rim, holding a mass of pale, shredded food. The hands manipulate the food within the bowl, pressing and crumbling the contents. The right hand briefly moves away to touch the stove surface before returning to the bowl, where both hands continue to break apart and handle the food.\noverall_soundscape: N/A\nnon_diegetic_music: N/A",
+  "target_video": "reference.mp4",
+  "camera_convention": "native H3 latent-frame-aligned camera_viewmats and normalized camera_K; no temporal interpolation"
+}
