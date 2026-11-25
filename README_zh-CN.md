@@ -6,7 +6,7 @@
 
 [English](README.md) · [简体中文](README_zh-CN.md)
 
-[arXiv 论文](https://arxiv.org/pdf/2611.21479) · [Hugging Face Paper](https://huggingface.co/papers/2611.21479) · [YouTube](https://youtu.be/OdywWF0srpU) · [数据集](https://huggingface.co/datasets/shaohao011/handivid)
+[LynnReal-Hand (arXiv)](https://arxiv.org/pdf/2611.21479) · [HandiVid (arXiv)](https://arxiv.org/abs/2611.29693) · [Hugging Face Paper](https://huggingface.co/papers/2611.21479) · [YouTube](https://youtu.be/OdywWF0srpU)
 
 [演示](#演示) · [模型](#模型) · [数据集](#数据集) · [快速开始](#快速开始) · [文档](#文档) · [许可证](LICENSE)
 
@@ -45,6 +45,8 @@ Base 和 Fast 均采用按采样日程精简的 Transformer 推理权重；Fast 
 ## 数据集
 
 **[HandiVid](https://huggingface.co/datasets/shaohao011/handivid)** 是 LynnReal-Hand 的预编码训练数据集。**v1 为 H3 编码版本**，已在 Hugging Face 上发布。
+
+数据集的构建与标注流程见论文 [*HandiVid: A High-Quality Dataset for Hand-Driven Interactive Video Generation*](https://arxiv.org/abs/2611.29693)。
 
 样本包含对齐的视频与手部潜变量、首帧锚点、图像/文本条件特征、帧对齐信息，以及可用的相机数组。数据以 TAR 分片发布，单个样本包含 Safetensors 和 JSON 记录，并提供 Parquet 索引及参考 PyTorch 读取器。
 
@@ -269,7 +271,9 @@ HandiVid 的许可与第三方声明见其[数据集许可证](https://huggingfa
 
 ## 引用
 
-如果在研究中使用 LynnReal-Hand 或 Ultra-Fast-VAE，请引用本文：
+### LynnReal-Hand 模型与 Ultra-Fast-VAE
+
+如果在研究中使用 LynnReal-Hand 或 Ultra-Fast-VAE，请引用 LynnReal-Hand 论文。
 
 ```bibtex
 @article{rui2026lynnreal,
@@ -277,6 +281,20 @@ HandiVid 的许可与第三方声明见其[数据集许可证](https://huggingfa
   author={Rui, Shaohao and Zhang, Chaoyang and Mao, Xiaofeng and Ma, Weijie},
   journal={arXiv preprint arXiv:2611.21479},
   year={2026}
+}
+```
+
+### HandiVid 数据集
+
+如果在研究中使用 HandiVid 数据集，请引用 HandiVid 论文。
+
+```bibtex
+@article{zhang2026handivid,
+  title={{HandiVid}: A High-Quality Dataset for Hand-Driven Interactive Video Generation},
+  author={Zhang, Chaoyang and Rui, Shaohao and Mao, Xiaofeng and Xu, Yuanxun and Xia, Haoyuan and Liu, Xiaohong and Du, Qinghe and Ma, Weijie},
+  journal={arXiv preprint arXiv:2611.29693},
+  year={2026},
+  url={https://arxiv.org/abs/2611.29693}
 }
 ```
 

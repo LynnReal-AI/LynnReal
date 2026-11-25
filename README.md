@@ -6,7 +6,7 @@
 
 [English](README.md) · [简体中文](README_zh-CN.md)
 
-[arXiv](https://arxiv.org/pdf/2611.21479) · [Hugging Face Paper](https://huggingface.co/papers/2611.21479) · [YouTube](https://youtu.be/OdywWF0srpU) · [Dataset](https://huggingface.co/datasets/shaohao011/handivid)
+[LynnReal-Hand (arXiv)](https://arxiv.org/pdf/2611.21479) · [HandiVid (arXiv)](https://arxiv.org/abs/2611.29693) · [Hugging Face Paper](https://huggingface.co/papers/2611.21479) · [YouTube](https://youtu.be/OdywWF0srpU)
 
 [Demo](#demo-gallery) · [Models](#models) · [Dataset](#dataset) · [Quick Start](#quick-start) · [Documentation](#documentation) · [License](LICENSE)
 
@@ -45,6 +45,8 @@ Both generation packages use sampling-specialized transformer exports. Fast also
 ## Dataset
 
 **[HandiVid](https://huggingface.co/datasets/shaohao011/handivid)** is the pre-encoded training dataset for LynnReal-Hand. **v1 uses H3 encodings** and is available on Hugging Face.
+
+The dataset construction and annotation pipeline are described in [*HandiVid: A High-Quality Dataset for Hand-Driven Interactive Video Generation*](https://arxiv.org/abs/2611.29693).
 
 Samples include aligned video and hand-motion latents, first-frame anchors, image/text conditioning features, frame alignment, and camera arrays where available. The release provides TAR shards containing Safetensors and JSON records, a Parquet index, and a reference PyTorch reader.
 
@@ -269,7 +271,9 @@ We thank the SolarWM, H3, Qwen, Diffusers, PyTorch, TAEHV, and DuoMatching contr
 
 ## Citation
 
-If you use LynnReal-Hand or Ultra-Fast-VAE in your research, please cite our paper:
+### LynnReal-Hand model and Ultra-Fast-VAE
+
+If you use LynnReal-Hand or Ultra-Fast-VAE in your research, please cite the LynnReal-Hand paper.
 
 ```bibtex
 @article{rui2026lynnreal,
@@ -277,6 +281,20 @@ If you use LynnReal-Hand or Ultra-Fast-VAE in your research, please cite our pap
   author={Rui, Shaohao and Zhang, Chaoyang and Mao, Xiaofeng and Ma, Weijie},
   journal={arXiv preprint arXiv:2611.21479},
   year={2026}
+}
+```
+
+### HandiVid dataset
+
+If you use the HandiVid dataset in your research, please cite the HandiVid paper.
+
+```bibtex
+@article{zhang2026handivid,
+  title={{HandiVid}: A High-Quality Dataset for Hand-Driven Interactive Video Generation},
+  author={Zhang, Chaoyang and Rui, Shaohao and Mao, Xiaofeng and Xu, Yuanxun and Xia, Haoyuan and Liu, Xiaohong and Du, Qinghe and Ma, Weijie},
+  journal={arXiv preprint arXiv:2611.29693},
+  year={2026},
+  url={https://arxiv.org/abs/2611.29693}
 }
 ```
 
