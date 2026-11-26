@@ -186,6 +186,8 @@ The CLI saves the generated MP4 and a JSON file containing the model, frame coun
 
 ## Custom Inputs
 
+Before testing either model, check the prompt and MANO control against a packaged example. The prompt should refer to the first frame and describe the action in the training caption format. Play the control alongside the first frame to check handedness and alignment. The right hand should appear red and the left hand blue on a black background. The [HandWorldBench conversion guide](docs/data.md#handworldbench-controls) includes the script and a sample command.
+
 Place your initial image, hand-motion video, and camera arrays beside an `example.json`:
 
 ```json
@@ -194,7 +196,7 @@ Place your initial image, hand-motion video, and camera arrays beside an `exampl
   "image": "image.png",
   "hand_video": "hand.mp4",
   "camera": "camera.npz",
-  "caption": "An egocentric view of a hand picking up a cup from a table.",
+  "caption": "For the target video, at 0.00 seconds into the target video, <Picture 1> (from [Shot 1]) is fully referenced.\n\nintegrated_multimodal_description: [Shot 1] The target video continues from the scene shown in <Picture 1>. A hand picks up the cup from the table.\n\noverall_soundscape: N/A\n\nnon_diegetic_music: N/A",
   "frames": 124,
   "fps": 30.0
 }

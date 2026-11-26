@@ -186,6 +186,8 @@ CLI 保存生成的 MP4，以及记录模型、帧数、帧率、随机种子和
 
 ## 自定义输入
 
+测试 Base 或 Fast 前，请先对照仓库示例检查 prompt 和 MANO 控制视频。prompt 应按训练时的格式引用首帧并描述动作。对照首帧播放控制视频，确认手部位置、左右手和帧序正确，黑底上右手为红色、左手为蓝色。[HandWorldBench 转换指南](docs/data.md#handworldbench-controls) 提供转换脚本和命令。
+
 将初始图像、手部动作视频和相机数组与 `example.json` 放在同一目录：
 
 ```json
@@ -194,7 +196,7 @@ CLI 保存生成的 MP4，以及记录模型、帧数、帧率、随机种子和
   "image": "image.png",
   "hand_video": "hand.mp4",
   "camera": "camera.npz",
-  "caption": "An egocentric view of a hand picking up a cup from a table.",
+  "caption": "For the target video, at 0.00 seconds into the target video, <Picture 1> (from [Shot 1]) is fully referenced.\n\nintegrated_multimodal_description: [Shot 1] The target video continues from the scene shown in <Picture 1>. A hand picks up the cup from the table.\n\noverall_soundscape: N/A\n\nnon_diegetic_music: N/A",,
   "frames": 124,
   "fps": 30.0
 }
