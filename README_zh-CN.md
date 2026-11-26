@@ -196,7 +196,7 @@ CLI 保存生成的 MP4，以及记录模型、帧数、帧率、随机种子和
   "image": "image.png",
   "hand_video": "hand.mp4",
   "camera": "camera.npz",
-  "caption": "For the target video, at 0.00 seconds into the target video, <Picture 1> (from [Shot 1]) is fully referenced.\n\nintegrated_multimodal_description: [Shot 1] The target video continues from the scene shown in <Picture 1>. A hand picks up the cup from the table.\n\noverall_soundscape: N/A\n\nnon_diegetic_music: N/A",,
+  "caption": "For the target video, at 0.00 seconds into the target video, <Picture 1> (from [Shot 1]) is fully referenced.\n\nintegrated_multimodal_description: [Shot 1] The target video continues from the scene shown in <Picture 1>. A hand picks up the cup from the table.\n\noverall_soundscape: N/A\n\nnon_diegetic_music: N/A",
   "frames": 124,
   "fps": 30.0
 }
