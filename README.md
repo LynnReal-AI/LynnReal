@@ -279,7 +279,7 @@ If you use LynnReal-Hand or Ultra-Fast-VAE in your research, please cite the Lyn
 
 ```bibtex
 @article{rui2026lynnreal,
-  title={LynnReal-Hand: Unlocking World Interaction with Hand Control},
+  title={{LynnReal-Hand}: Unlocking World Interaction with Hand Control},
   author={Rui, Shaohao and Zhang, Chaoyang and Mao, Xiaofeng and Ma, Weijie},
   journal={arXiv preprint arXiv:2611.21479},
   year={2026}
