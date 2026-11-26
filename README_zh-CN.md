@@ -279,7 +279,7 @@ HandiVid 的许可与第三方声明见其[数据集许可证](https://huggingfa
 
 ```bibtex
 @article{rui2026lynnreal,
-  title={LynnReal-Hand: Unlocking World Interaction with Hand Control},
+  title={{LynnReal-Hand}: Unlocking World Interaction with Hand Control},
   author={Rui, Shaohao and Zhang, Chaoyang and Mao, Xiaofeng and Ma, Weijie},
   journal={arXiv preprint arXiv:2611.21479},
   year={2026}
