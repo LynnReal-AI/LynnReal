@@ -309,7 +309,7 @@ HandiVid 的许可与第三方声明见其[数据集许可证](https://huggingfa
 
 ```bibtex
 @article{rui2026biwm,
-  title={BiWM: Advancing Open-Source Interactive Video World Models with Bidirectional Autoregression},
+  title={{BiWM}: Advancing Open-Source Interactive Video World Models with Bidirectional Autoregression},
   author={Rui, Shaohao and Mao, Xiaofeng and Zhang, Zhanyu and Lin, Peijia and Zhu, Yansong and Zhang, Yibo and Wan, Haibin and Zhao, Zhangrui and Ma, Weijie},
   journal={arXiv preprint arXiv:2606.10135},
   year={2026},
@@ -317,7 +317,7 @@ HandiVid 的许可与第三方声明见其[数据集许可证](https://huggingfa
 }
 
 @misc{mao2026lynnrealomninativemultimodalvideo,
-  title={LynnReal-Omni: Native multi-modal Video Generation for Agentic Visual Workflows},
+  title={{LynnReal-Omni}: Native multi-modal Video Generation for Agentic Visual Workflows},
   author={Xiaofeng Mao and Peijia Lin and Shaohao Rui and Yibo Zhang and Haibin Wan and Weijie Ma},
   year={2026},
   eprint={2609.15863},
