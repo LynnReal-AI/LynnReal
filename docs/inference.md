@@ -8,7 +8,7 @@ LynnReal-Hand accepts a first image, caption, aligned hand-condition video, and 
 | --- | --- | --- |
 | Config | `configs/base.json` | `configs/fast.json` |
 | Generation | Bidirectional, windowed above 240 frames | Causal, chunk by chunk |
-| Sampling | 30 schedule points, shift 3, CFG 3.0 by default (also supports 1.0) | 3 flow-map transitions, shift 3, guidance 1 |
+| Sampling | 30-step sampling, shift 3, CFG 3.0 by default (also supports 1.0) | 3 flow-map transitions, shift 3, guidance 1 |
 | Context | Up to 240 input frames, with five generated latents carried between windows | W2: current chunk plus preceding generated chunk |
 | Default output | 1344 × 768 | 960 × 540 |
 | Model weights | Complete Base | Complete Fast transformer |
@@ -82,7 +82,7 @@ lynnreal-hand infer \
 
 Base uses the 240-frame temporal RoPE reference for every input length. Matching hand and target tokens retain a temporal position gap of 405. Views are re-expressed relative to each window's first frame. Continuation windows use the first generated RGB frame of the overlap to build the image anchor and Qwen conditions. Five generated target latents stay fixed as context for the next window. The assembled latent sequence is decoded once at the original frame count and rate.
 
-The default Base configuration uses CFG 3.0. Add `--guidance-scale 1.0` to the inference command to use CFG 1.0 on the same 30-point schedule. The `--accelerated` option is specific to Fast.
+The default Base configuration uses CFG 3.0. Add `--guidance-scale 1.0` to the inference command to use CFG 1.0 with the same 30-step sampler. The `--accelerated` option is specific to Fast.
 
 ## Output files
 

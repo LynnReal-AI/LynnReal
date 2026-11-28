@@ -118,7 +118,7 @@ lynnreal-hand validate --config configs/fast.json --example examples/05/example.
 
 ### LynnReal-Hand-Base
 
-Base 在 **1344 × 768** 下做双向采样。不同长度的输入统一使用 240 帧档的时间 RoPE。超过 240 帧时使用 240 帧滑窗，每窗继承上窗生成的 5 个 latent（17 个 RGB 帧），历史长度与 Fast 一致。默认使用 30 个采样调度点、CFG 3.0。传入 `--guidance-scale 1.0` 可在同一调度下使用 CFG 1.0。
+Base 在 **1344 × 768** 下做双向采样。不同长度的输入统一使用 240 帧档的时间 RoPE。超过 240 帧时使用 240 帧滑窗，每窗继承上窗生成的 5 个 latent（17 个 RGB 帧），历史长度与 Fast 一致。默认使用 30 步采样、CFG 3.0。传入 `--guidance-scale 1.0` 可在相同的 30 步采样下使用 CFG 1.0。
 
 ```bash
 lynnreal-hand prepare \

@@ -118,7 +118,7 @@ Input validation runs without model weights or a GPU. After downloading weights,
 
 ### LynnReal-Hand-Base
 
-Base samples bidirectionally at **1344 × 768**. Temporal RoPE uses the 240-frame reference at every input length. Videos longer than 240 frames use 240-frame windows that carry five generated latents (17 RGB frames) into the next window, the same history length used by Fast. Base defaults to the 30-point schedule with CFG 3.0. Pass `--guidance-scale 1.0` to use CFG 1.0 with the same schedule.
+Base samples bidirectionally at **1344 × 768**. Temporal RoPE uses the 240-frame reference at every input length. Videos longer than 240 frames use 240-frame windows that carry five generated latents (17 RGB frames) into the next window, the same history length used by Fast. Base defaults to 30-step sampling with CFG 3.0. Pass `--guidance-scale 1.0` to use CFG 1.0 with the same sampler.
 
 ```bash
 lynnreal-hand prepare \
