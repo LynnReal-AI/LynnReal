@@ -102,6 +102,8 @@ def latent_frames_to_pixel_frames(
 def latent_aligned_pixel_indices(
     num_frames: int,
     geometry: H3Geometry = DEFAULT_GEOMETRY,
+    *,
+    allow_partial: bool = False,
 ) -> np.ndarray:
     """Map encoded latent positions to exact source-pixel frame indices.
 
@@ -110,14 +112,16 @@ def latent_aligned_pixel_indices(
     returns 47 entries and never retimes the source clip.
     """
 
-    expected_latents = pixel_frames_to_latent_frames(num_frames, geometry)
+    if num_frames < 1:
+        raise ValueError("A video must contain at least one frame")
+    expected_latents = None if allow_partial else pixel_frames_to_latent_frames(num_frames, geometry)
     offsets = np.asarray((0, 1, 5, 9, 13), dtype=np.int64)
     indices: list[np.ndarray] = []
     for base in range(0, num_frames, geometry.pixel_frames_per_chunk):
         period = base + offsets
         indices.append(period[period < num_frames])
     result = np.concatenate(indices)
-    if result.shape != (expected_latents,):
+    if expected_latents is not None and result.shape != (expected_latents,):
         raise RuntimeError("H3 pixel/latent alignment is internally inconsistent")
     return result
 

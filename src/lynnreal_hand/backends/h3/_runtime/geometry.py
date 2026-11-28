@@ -10,7 +10,7 @@ import inference_core as core
 _window = core.window_positions
 
 
-def layout(batch, device, phase, with_hand=True, latent_frames=37):
+def layout(batch, device, phase, with_hand=True, latent_frames=37, *, target_rope_gap=None):
     from h3_components.layout import build_condition_layout, H3VisualObservationSpec
     frames = int(batch.target_latents.shape[1])
     h,w = batch.target_latents.shape[-2:]
@@ -18,7 +18,7 @@ def layout(batch, device, phase, with_hand=True, latent_frames=37):
     anchor = task in ('i2v','i2v_cam','i2v_cam_hand')
     hand = with_hand and getattr(batch,'hand_latents',None) is not None
     camera = task in ('i2v_cam_hand','i2v_cam')
-    key=(str(device),phase,with_hand,latent_frames,task)
+    key=(str(device),phase,with_hand,latent_frames,task,target_rope_gap)
     if not hasattr(batch,'_inference_layout_cache'): batch._inference_layout_cache={}
     if key in batch._inference_layout_cache: return batch._inference_layout_cache[key]
     assert frames >= latent_frames and h%2 == w%2 == 0
@@ -29,7 +29,8 @@ def layout(batch, device, phase, with_hand=True, latent_frames=37):
     positions=source.position_ids.copy(); cond=source.condition_video_indices
     if hand:
         spans=np.array([(5./3.)*(1,4,4,4,4)[i%5] for i in range(frames)],np.float64)
-        times=L+spans.sum()+np.concatenate(([0.],spans[:-1].cumsum()))
+        gap=spans.sum() if target_rope_gap is None else target_rope_gap
+        times=L+gap+np.concatenate(([0.],spans[:-1].cumsum()))
         positions[source.target_video_indices,0]=np.repeat(times,rows)
     if anchor: positions[cond[:A],0]=positions[source.target_video_indices[:A],0]
     prefix=np.concatenate((source.text_indices,cond[:A]))

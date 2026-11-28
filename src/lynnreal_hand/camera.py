@@ -9,7 +9,7 @@ def convert_camera(source,output,*,frames):
     values=np.load(source,allow_pickle=False)
     poses=values['camera_c2w'] if 'camera_c2w' in values else values['pose']
     if poses.shape!=(frames,4,4):raise ValueError('Raw absolute C2W must contain one pose per genuine video frame')
-    indices=latent_aligned_pixel_indices(frames)
+    indices=latent_aligned_pixel_indices(frames,allow_partial=True)
     views=first_frame_relative_w2c(poses.astype(np.float32))[indices]
     K=np.repeat(np.eye(3,dtype=np.float32)[None],len(indices),axis=0)
     K[:,0,0]=H3_FIXED_FX;K[:,1,1]=H3_FIXED_FY;K[:,0,2]=K[:,1,2]=.5

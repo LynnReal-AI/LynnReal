@@ -56,7 +56,7 @@ fast/
 
 `vae/` is the original H3 VAE used for native encoding and Base decoding. Fast's `decoder/` contains Ultra-Fast-VAE for video output. The tokenizer and processor directories include their vocabulary, merge rules, and templates.
 
-The transformer retains the backbone and time-conditioning parameters and stores only the AdaLN modulation tables needed by its packaged sampling schedule. The learned block projection matrices are omitted. Base uses its default full-sequence schedule; Fast uses three sampling steps. The tokenizer vocabulary is included in full and is independent of these AdaLN tables. See [AdaLN memory](inference.md#adaln-memory).
+The transformer retains the backbone and time-conditioning parameters and stores only the AdaLN modulation tables needed by its packaged sampling schedule. The learned block projection matrices are omitted. Base uses its 30-point schedule for a single span or each sliding window. Fast uses three sampling steps. The tokenizer vocabulary is included in full and is independent of these AdaLN tables. See [AdaLN memory](inference.md#adaln-memory).
 
 ## Configuration
 

@@ -140,11 +140,122 @@ def test_w2_positions_and_joint_cfg():
     doc=student_layout(layout(batch,'cpu','HAND',latent_frames=37))
     torch.testing.assert_close(window_positions(doc,1,1,2),window_positions(doc,5,5,2))
     assert len(window_positions(doc,7,7,2))==2
-    positive=pack(batch,torch.zeros(1,24,37,2,2),.3,device='cpu',latent_frames=37,seed=42)
+    positive=pack(batch,torch.zeros(1,24,37,2,2),.3,device='cpu',latent_frames=37,seed=42,
+                  history_frames=5)
     negative=captionless_without_hand(positive)
     assert positive.hand_rows==37 and negative.hand_rows==0
     assert negative.anchor_rows==positive.anchor_rows==1
     torch.testing.assert_close(positive.inputs['cam_viewmats'][0,:,0,3],torch.arange(37).float())
+    positions=positive.inputs['position_ids']
+    torch.testing.assert_close(positions[-37:,0]-positions[-74:-37,0],torch.full((37,),405.,dtype=positions.dtype))
+    assert positions[4,0]==positions[-37,0]
+    torch.testing.assert_close(negative.row_times[-37:-32],torch.full((5,),.999))
+    torch.testing.assert_close(negative.row_times[-32:],torch.full((32,),.3))
+
+
+@pytest.mark.parametrize('frames',[1, 103, 240, 241, 243, 260, 466, 1121, 1506])
+def test_base_window_spans_preserve_native_frame_mapping(frames):
+    from lynnreal_core.backends.minimax_h3.geometry import latent_aligned_pixel_indices
+    from lynnreal_hand.inference.base_windows import window_spans
+
+    def indices(length):
+        return latent_aligned_pixel_indices(length, allow_partial=True)
+
+    spans=window_spans(frames)
+    if frames>240:
+        assert len(spans)>1
+    else:
+        assert spans==[(0,frames)]
+    kept=[]
+    for i,(start,end) in enumerate(spans):
+        assert start%17==0 and end-start<=240
+        if i:
+            assert spans[i-1][1]-start==17
+        kept.extend(start+indices(end-start)[5 if i else 0:])
+    np.testing.assert_array_equal(kept,indices(frames))
+
+
+@pytest.mark.parametrize('scale,calls,suffix',[(1.0,29,2.0), (3.0,58,4.0)])
+def test_base_cfg_schedules_preserve_history(monkeypatch,scale,calls,suffix):
+    activate()
+    from types import SimpleNamespace
+    import base_conditioning
+    from lynnreal_hand.inference.base import BasePipeline
+
+    pipeline=BasePipeline.__new__(BasePipeline)
+    pipeline.device=torch.device('cpu')
+    pipeline.model=SimpleNamespace(to=lambda device:None)
+    pipeline.config=dict(sampling=dict(schedule_points=30,shift=3.,guidance_scale=scale))
+    shape=(24,6,2,2)
+    batch=SimpleNamespace(task='i2v_cam_hand',target_latents=torch.empty(shape),hand_latents=torch.zeros(shape),
+        anchor_latents=torch.zeros(24,1,2,2),prompt_embeds=torch.zeros(4,8),
+        text_token_tags=torch.tensor([1,0,0,1]),camera_viewmats=torch.eye(4).repeat(6,1,1),
+        camera_K=torch.eye(3).repeat(6,1,1))
+    seen=[]
+
+    def predict(model, packed):
+        seen.append(packed.inputs['hidden_states'][0,-6:-1].clone())
+        return torch.full((1,*shape),2.0 if packed.hand_rows else 1.0)
+
+    monkeypatch.setattr(base_conditioning,'predict',predict)
+    history=torch.full((1,24,5,2,2),9.0)
+    output=pipeline._sample(batch,seed=42,history=history)
+    noise=torch.randn((1,*shape),generator=torch.Generator().manual_seed(42))
+    assert len(seen)==calls
+    for context in seen:
+        torch.testing.assert_close(context,seen[0],rtol=0,atol=0)
+    torch.testing.assert_close(output[:,:,:5],history,rtol=0,atol=0)
+    torch.testing.assert_close(output[:,:,5:],noise[:,:,5:]+suffix)
+
+
+def test_base_long_cache_uses_local_cameras_and_joint_timeline(tmp_path, monkeypatch):
+    activate()
+    from types import SimpleNamespace
+    import h3_components.loader
+    from lynnreal_core.backends.minimax_h3 import official_codec
+    from lynnreal_hand.inference.base import BasePipeline
+    from lynnreal_hand.inference.base_windows import WINDOW_LATENTS
+    from lynnreal_hand.models import codecs
+
+    frames,length=260,77
+    shape=(24,length,2,2)
+    camera=torch.eye(4).repeat(length,1,1)
+    camera[:,0,3]=torch.arange(length)
+    hand=torch.arange(length).reshape(1,length,1,1).expand(shape).float()
+    prefix=torch.zeros(4,8),torch.tensor([1,0,0,1])
+    anchor=torch.zeros(24,1,2,2)
+    cache=save_cache(dict(hand_latents=hand,anchor_latents=anchor,prompt_embeds=prefix[0],
+        text_token_tags=prefix[1],camera_viewmats=camera,camera_K=torch.eye(3).repeat(length,1,1)),
+        dict(sample_id='clip',caption='hands',pixel_frames=frames,target_shape=shape,variant='stage1',
+             fps=30),tmp_path/'cache')
+    batch=load_cache(cache)
+    module=SimpleNamespace(to=lambda device:None)
+    pipeline=BasePipeline.__new__(BasePipeline)
+    pipeline.device=torch.device('cpu')
+    pipeline.model=module
+    pipeline.config=dict(conditioning=dict(checkpoint_path='unused'),video=dict(height=32))
+    monkeypatch.setattr(codecs,'native_encoder',lambda *_:module)
+    monkeypatch.setattr(codecs,'encode_native',lambda *args,**kwargs:anchor)
+    monkeypatch.setattr(codecs,'decode_native',lambda *args,**kwargs:torch.zeros(263,32,32,3,dtype=torch.uint8))
+    monkeypatch.setattr(h3_components.loader,'load_conditioners',
+        lambda *args,**kwargs:SimpleNamespace(text_encoder=module,processor=None,tokenizer=None))
+    monkeypatch.setattr(official_codec,'encode_joint_prompt_condition',lambda *args,**kwargs:prefix)
+    offsets=[]
+
+    def sample(window, *, seed, history):
+        offset=int(window.hand_latents[0,0,0,0])
+        offsets.append(offset)
+        expected=torch.arange(WINDOW_LATENTS).clamp_max(length-offset-1).float()
+        torch.testing.assert_close(window.camera_viewmats[:,0,3],expected)
+        if history is not None:
+            torch.testing.assert_close(history[0,0,:,0,0],expected[:5]+offset)
+        return window.hand_latents[None]
+
+    monkeypatch.setattr(pipeline,'_sample',sample)
+    images,latents=pipeline.generate(batch)
+    assert offsets==[0,10]
+    assert len(images)==frames
+    torch.testing.assert_close(latents,hand[None])
 
 
 def test_reference_schedule_has_three_maps():

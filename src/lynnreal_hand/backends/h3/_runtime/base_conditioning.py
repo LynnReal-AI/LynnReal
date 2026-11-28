@@ -2,6 +2,7 @@
 from dataclasses import dataclass
 import torch
 from lynnreal_core.backends.minimax_h3.layout import patchify_video,unpatchify_video
+from lynnreal_hand.inference.base_windows import ROPE_GAP
 from geometry import layout
 
 @dataclass
@@ -21,8 +22,9 @@ def finish_times(inputs, row_times):
     inputs.update(timestep=unique, timestep_indices=inverse)
     return inputs
 
-def pack(batch, noisy, t, *, device, latent_frames, seed):
-    doc = layout(batch, device, 'HAND', with_hand=True, latent_frames=latent_frames)
+def pack(batch, noisy, t, *, device, latent_frames, seed, history_frames=0):
+    doc = layout(batch, device, 'HAND', with_hand=True, latent_frames=latent_frames,
+                 target_rope_gap=ROPE_GAP)
     per_frame = doc.rows_per_frame
     rows = latent_frames * per_frame
     prompt = batch.prompt_embeds[None].to(device, torch.bfloat16)
@@ -45,7 +47,9 @@ def pack(batch, noisy, t, *, device, latent_frames, seed):
     chunks.append(patchify_video(noisy))
     positions.append(doc.target_positions)
     tags.append(torch.zeros(rows, device=device, dtype=torch.long))
-    times.append(torch.full((rows,), float(t), device=device))
+    target_times = torch.full((rows,), float(t), device=device)
+    target_times[:history_frames*per_frame] = .999
+    times.append(target_times)
     row_times = torch.cat(times)
     video_indices = torch.arange(doc.text_rows, row_times.numel(), device=device)
     frame_ids = torch.cat(([torch.zeros(doc.anchor_rows, device=device, dtype=torch.long)] if doc.anchor_rows else []) +

@@ -4,8 +4,8 @@ import torch
 
 def pixel_frames(latent_frames):
     whole,tail=divmod(latent_frames,5)
-    if tail not in (0,2) or latent_frames<5:raise ValueError('unsupported native H3 output span')
-    return whole*17+(5 if tail==2 else 0)
+    if latent_frames<1:raise ValueError('A native H3 video must have at least one latent')
+    return whole*17+(4*tail-3 if tail else 0)
 
 
 @torch.no_grad()

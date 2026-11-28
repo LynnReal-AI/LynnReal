@@ -50,6 +50,45 @@ def encode_native(vae, pixels, device, *, seed=42):
         return codec._video_latents(x,seed=seed)[0]
 
 
+@torch.no_grad()
+def encode_native_hand(vae, pixels, device, *, seed=42):
+    """Encode genuine partial H3 chunks for the Base hand timeline."""
+    from diffusers.models.autoencoders.vae import DiagonalGaussianDistribution
+    from lynnreal_core.backends.minimax_h3.geometry import latent_aligned_pixel_indices
+
+    chunk = vae.config.clip_length
+    if (chunk, vae.config.token_drop) != (17, 3):
+        raise ValueError('Unexpected native H3 temporal configuration')
+    mean = torch.tensor([.485, .456, .406], device=device).view(1, 3, 1, 1, 1)
+    std = torch.tensor([.229, .224, .225], device=device).view(1, 3, 1, 1, 1)
+    dtype = next(vae.encoder.parameters()).dtype
+    moments = []
+    for start in range(0, len(pixels), chunk):
+        clip = pixels[start:start + chunk]
+        expected = len(latent_aligned_pixel_indices(len(clip), allow_partial=True))
+        missing = max(0, 1 + 4 * (expected - 1) - len(clip))
+        x = torch.from_numpy(clip).to(device).permute(3, 0, 1, 2)[None]
+        x = ((x.float() / 255.0 - mean) / std).to(dtype)
+        hook = None
+        if missing:
+            hook = vae.encoder.conv_in.register_forward_hook(
+                lambda _module, _args, features: F.pad(features, (0, 0, 0, 0, 0, missing)))
+        try:
+            with torch.autocast('cuda', dtype=torch.float16):
+                result = vae._encode_clip(x)
+        finally:
+            if hook is not None:
+                hook.remove()
+        if result.shape[2] != expected:
+            raise ValueError('Native hand encoder and camera timelines differ')
+        moments.append(result)
+    posterior = DiagonalGaussianDistribution(torch.cat(moments, dim=2))
+    z = posterior.sample(generator=torch.Generator().manual_seed(seed)).half().float().cpu()
+    center = torch.tensor(vae.config.latents_mean).view(1, -1, 1, 1, 1)
+    scale = torch.tensor(vae.config.latents_std).view(1, -1, 1, 1, 1)
+    return ((z - center) / scale)[0].bfloat16().contiguous()
+
+
 class LynnRealDecoder:
     def __init__(self, directory, device, *, compiled=True, height=540, width=960):
         from ..backends.h3.runtime import activate
@@ -84,7 +123,11 @@ class LynnRealDecoder:
 
 @torch.no_grad()
 def decode_native(vae, latents, device, *, output_height=None):
-    from video_decode import decode
+    from video_decode import decode, pixel_frames
+    frames = pixel_frames(latents.shape[2])
+    latents = latents.to(device)
+    if latents.shape[2] < 5:
+        latents = torch.cat((latents, latents[:, :, -1:].expand(-1, -1, 5-latents.shape[2], -1, -1)), dim=2)
     images=decode(vae,latents,device)[0].permute(1,2,3,0)
     if output_height==540 and images.shape[1]==544: images=images[:,2:-2]
-    return (images.clamp(0,1)*255).round().byte().cpu()
+    return (images[:frames].clamp(0,1)*255).round().byte().cpu()

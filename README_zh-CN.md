@@ -18,7 +18,7 @@
 
 - **精细手物交互。** 通过关节化手部动作与相机轨迹，控制不同场景中的伸手、抓取、释放和双手协同交互。
 - **交互保持训练（IPT）。** 基于 100K 交互片段，通过手部感知的多层次监督强化小尺度手部及接触区域，并在因果蒸馏中保持控制精度。
-- **三步因果生成。** LynnReal-Hand-Base 生成完整序列；LynnReal-Hand-Fast 学习因果流映射，并在自生成历史上进一步优化。固定首帧锚点、有界滑动上下文和局部时间位置重置支持流式生成，避免注意力缓存持续增长。
+- **三步因果生成。** LynnReal-Hand-Base 使用双向采样。LynnReal-Hand-Fast 学习因果流映射，并在自生成历史上进一步优化。Fast 使用固定首帧锚点、有界上下文和局部时间位置重置实现流式生成。
 - **Ultra-Fast-VAE 加速流式解码。** 紧凑解码器保留原生 H3 潜变量接口，通过蒸馏恢复空间与时间重建质量。
 - **低延迟流式推理。** 优化后的 Fast 在单张 H200 上达到 **540p、18.03 FPS**，**预热后每块平均响应 741 ms**。采用按采样日程精简的 AdaLN 表并卸载原生 VAE/Qwen 编码器后，独立测得**预热后峰值已分配显存为 34.89 GiB**；测量范围见[性能](#性能)。
 
@@ -36,7 +36,7 @@ https://github.com/user-attachments/assets/3df7244c-e001-490f-8743-9b556942767b
 
 | 模型 | 说明 | 默认输出 | 下载 |
 | --- | --- | --- | --- |
-| **LynnReal-Hand-Base** | 33B 主干，双向完整序列生成 | 1344 × 768 | [Hugging Face](https://huggingface.co/shaohao011/LynnReal-Hand-Base-1.0) |
+| **LynnReal-Hand-Base** | 33B 主干，双向采样，RoPE 对齐到 240 帧档 | 1344 × 768 | [Hugging Face](https://huggingface.co/shaohao011/LynnReal-Hand-Base-1.0) |
 | **LynnReal-Hand-Fast** | 33B 因果主干，三步采样、W2 上下文、首帧锚点 | 960 × 540 | [Hugging Face](https://huggingface.co/shaohao011/LynnReal-Hand-Fast-preview) |
 | **Ultra-Fast-VAE** | LynnReal-Hand-Fast 使用的视频解码器 | Fast 流程中为 960 × 540 | [Hugging Face](https://huggingface.co/shaohao011/LynnReal-ultra-fast-vae-1.0) |
 
@@ -118,7 +118,7 @@ lynnreal-hand validate --config configs/fast.json --example examples/05/example.
 
 ### LynnReal-Hand-Base
 
-Base 使用 **1344 × 768** 的完整序列双向采样，默认 30 个采样调度点、CFG 3。先准备条件缓存，再生成视频：
+Base 在 **1344 × 768** 下做双向采样。不同长度的输入统一使用 240 帧档的时间 RoPE。超过 240 帧时使用 240 帧滑窗，每窗继承上窗生成的 5 个 latent（17 个 RGB 帧），历史长度与 Fast 一致。默认使用 30 个采样调度点、CFG 3.0。传入 `--guidance-scale 1.0` 可在同一调度下使用 CFG 1.0。
 
 ```bash
 lynnreal-hand prepare \

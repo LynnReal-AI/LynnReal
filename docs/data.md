@@ -18,7 +18,7 @@ python scripts/convert_handworldbench_mano.py \
   --mano-dir /path/to/mano/models --output hand.mp4
 ```
 
-Before inference, compare the hand location and motion to the source frames. Check for a black background, a red right hand, a blue left hand and the same camera field of view and timeline as the RGB. Set `caption` to the training-format prompt with its first-frame reference, shot description and audio fields. For the benchmark, the exact prompt is stored in `model_prompt` in each results manifest. The converted MP4 follows the source length, while the general-purpose inference CLI accepts the specific clip lengths listed below.
+Before inference, compare the hand location and motion to the source frames. Check for a black background, a red right hand, a blue left hand and the same camera field of view and timeline as the RGB. Set `caption` to the training-format prompt with its first-frame reference, shot description and audio fields. For the benchmark, the exact prompt is stored in `model_prompt` in each results manifest. The converted MP4 follows the source length. Base accepts the full timeline, and Fast supports the spans listed below.
 
 Download the reference inputs, original and adapted controls, and available predictions from the [Fast results](https://huggingface.co/shaohao011/LynnReal-Hand-Fast-preview/tree/main/HandWBench_Results) or [Base results](https://huggingface.co/shaohao011/LynnReal-Hand-Base-1.0/tree/main/HandWBench_Results).
 
@@ -32,7 +32,7 @@ If your source uses absolute camera-to-world poses for every RGB frame, store th
 python scripts/convert_camera.py --input raw_camera.npz --output camera.npz --frames 243
 ```
 
-Native spans are 124/37, 158/47, 243/72 and 260/77 RGB/latent frames. Camera conversion selects physical frame offsets `[0,1,5,9,13]` in each 17-frame group and `[0,1]` in a five-frame tail. Preserve source frame order, translation units and native frame rate.
+Fast supports 124/37, 158/47, 243/72 and 260/77 RGB/latent frames. For Base, pass the full source frame count to the camera converter. Conversion selects the in-range physical offsets `[0,1,5,9,13]` in each 17-frame group, including the final partial group. Preserve source frame order, translation units and native frame rate.
 
 ## Conditioning cache
 

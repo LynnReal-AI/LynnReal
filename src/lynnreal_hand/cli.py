@@ -18,6 +18,8 @@ def parser():
             q.add_argument('--output',required=True)
         if name=='infer':
             q.add_argument('--cache');q.add_argument('--output',required=True);q.add_argument('--seed',type=int,default=42)
+            q.add_argument('--guidance-scale',type=float,choices=(1.0,3.0),
+                           help='Base classifier-free guidance scale (default: 3.0)')
             q.add_argument('--accelerated',action='store_true');q.add_argument('--save-latents',action='store_true')
     q=sub.add_parser('export');q.add_argument('--component',required=True,choices=['base','fast','hand_encoder','vae'])
     q.add_argument('--source',required=True);q.add_argument('--output',required=True);q.add_argument('--dry-run',action='store_true')
@@ -54,11 +56,11 @@ def main(argv=None):
         config=load_config(args.config,weights_root=args.weights_root,output_dir=getattr(args,'output',None))
         if args.command=='validate':
             from .data import load_example
-            example=load_example(args.example,verify_media=True) if args.example else None
+            example=load_example(args.example,verify_media=True,stage=config['stage']) if args.example else None
             if example:
                 import numpy as np
-                from .data import NATIVE_LENGTHS
-                camera=np.load(example['camera'],allow_pickle=False);n=NATIVE_LENGTHS[example['frames']]
+                from .data import native_length
+                camera=np.load(example['camera'],allow_pickle=False);n=native_length(example['frames'],config['stage'])
                 if camera['camera_viewmats'].shape!=(n,4,4) or camera['camera_K'].shape!=(n,3,3):
                     raise ValueError('Camera arrays must have one pose/intrinsic per native latent frame')
                 if not all(np.isfinite(camera[k]).all() for k in ['camera_viewmats','camera_K']):raise ValueError('Nonfinite camera condition')
@@ -70,6 +72,9 @@ def main(argv=None):
             check_weights(config,conditioning=True)
             from .prepare import prepare_example
             print(prepare_example(config,args.example,args.output));return
+        if args.guidance_scale is not None:
+            if config['stage']!='stage1':raise ValueError('--guidance-scale is a Base inference option')
+            config['sampling']['guidance_scale']=args.guidance_scale
         check_weights(config,conditioning=not args.cache)
         from .data import load_cache
         cache=args.cache
@@ -83,6 +88,9 @@ def main(argv=None):
         if config['stage']=='stage1':
             if args.accelerated:raise ValueError('--accelerated is a streaming Fast option')
             from .inference.base import BasePipeline
+            from .inference.base_windows import WINDOW_FRAMES
+            if args.cache and batch.pixel_frames>WINDOW_FRAMES:
+                check_weights(config,conditioning=True)
             pipeline=BasePipeline(config)
         elif args.accelerated:
             from .inference.accelerated import AcceleratedFastPipeline
@@ -98,8 +106,12 @@ def main(argv=None):
         from .media import write_video
         write_video(frames,args.output,batch.fps)
         output=Path(args.output)
-        output.with_suffix('.json').write_text(json.dumps(dict(model='LynnReal-Hand-Base' if config['stage']=='stage1' else 'LynnReal-Hand-Fast',
-            frames=len(frames),fps=batch.fps,seed=args.seed,source_id=batch.sample_id),indent=2)+'\n')
+        metadata=dict(model='LynnReal-Hand-Base' if config['stage']=='stage1' else 'LynnReal-Hand-Fast',
+            frames=len(frames),fps=batch.fps,seed=args.seed,source_id=batch.sample_id)
+        if config['stage']=='stage1':
+            metadata.update(guidance_scale=config['sampling'].get('guidance_scale',3.0),
+                            schedule_points=config['sampling']['schedule_points'])
+        output.with_suffix('.json').write_text(json.dumps(metadata,indent=2)+'\n')
         if args.save_latents:
             from safetensors.torch import save_file
             save_file({'latents':latents.cpu().contiguous()},str(output.with_suffix('.safetensors')))

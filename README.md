@@ -18,7 +18,7 @@
 
 - **Fine-grained hand–object interaction.** Use articulated hand motion and camera trajectories to guide reaching, grasping, releasing, and coordinated bimanual interactions across diverse scenes.
 - **Interaction-Preserving Training (IPT).** Trained on 100K interaction clips, LynnReal-Hand prioritizes small hand and contact regions through hand-aware multilevel supervision and preserves control fidelity during causal distillation.
-- **Three-step causal generation.** LynnReal-Hand-Base generates full sequences; LynnReal-Hand-Fast learns a causal flow map and refines it on self-generated histories. A fixed first-frame anchor, bounded sliding context, and local temporal-position resets support streaming without an ever-growing attention cache.
+- **Three-step causal generation.** LynnReal-Hand-Base uses bidirectional sampling. LynnReal-Hand-Fast learns a causal flow map and refines it on self-generated histories. Fast uses a fixed first-frame anchor, bounded context, and local temporal-position resets for streaming.
 - **Ultra-Fast-VAE for responsive streaming.** The compact decoder preserves the native H3 latent interface while recovering spatial and temporal reconstruction fidelity through distillation.
 - **Low-latency streaming.** Optimized Fast reaches **18.03 FPS at 540p on one H200**, with **741 ms mean warmed response per chunk**. A separate warmed measurement records **34.89 GiB peak allocated GPU memory** with sampling-specific AdaLN tables and the native VAE/Qwen encoder offloaded; see [performance](#performance) for measurement scope.
 
@@ -36,7 +36,7 @@ The demo presents hand-controlled interactions across natural, everyday, and ima
 
 | Model | Description | Default output | Download |
 | --- | --- | --- | --- |
-| **LynnReal-Hand-Base** | 33B backbone; bidirectional full-sequence generation | 1344 × 768 | [Hugging Face](https://huggingface.co/shaohao011/LynnReal-Hand-Base-1.0) |
+| **LynnReal-Hand-Base** | 33B backbone, bidirectional sampling with 240-frame RoPE alignment | 1344 × 768 | [Hugging Face](https://huggingface.co/shaohao011/LynnReal-Hand-Base-1.0) |
 | **LynnReal-Hand-Fast** | 33B causal backbone; three sampling steps, W2 context, first-frame anchor | 960 × 540 | [Hugging Face](https://huggingface.co/shaohao011/LynnReal-Hand-Fast-preview) |
 | **Ultra-Fast-VAE** | Video decoder used by LynnReal-Hand-Fast | 960 × 540 in the Fast pipeline | [Hugging Face](https://huggingface.co/shaohao011/LynnReal-ultra-fast-vae-1.0) |
 
@@ -118,7 +118,7 @@ Input validation runs without model weights or a GPU. After downloading weights,
 
 ### LynnReal-Hand-Base
 
-Base uses full-sequence bidirectional sampling at **1344 × 768**, with 30 sampling schedule points and CFG 3. Prepare its conditions, then generate the video:
+Base samples bidirectionally at **1344 × 768**. Temporal RoPE uses the 240-frame reference at every input length. Videos longer than 240 frames use 240-frame windows that carry five generated latents (17 RGB frames) into the next window, the same history length used by Fast. Base defaults to the 30-point schedule with CFG 3.0. Pass `--guidance-scale 1.0` to use CFG 1.0 with the same schedule.
 
 ```bash
 lynnreal-hand prepare \
